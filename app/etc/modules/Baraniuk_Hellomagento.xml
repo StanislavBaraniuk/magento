@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Baraniuk_Hellomagento>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Baraniuk_Hellomagento>
+    </modules>
+</config>

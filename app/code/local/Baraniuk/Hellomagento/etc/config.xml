@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Baraniuk_Hellomagento>
+            <version>0.0.1</version>
+        </Baraniuk_Hellomagento>
+    </modules>
+    <frontend>
+        <routers>
+            <hellomagento>
+                <use>standard</use>
+                <args>
+                    <module>Baraniuk_Hellomagento</module>
+                    <frontName>Baraniuk_Hellomagento</frontName>
+                </args>
+            </hellomagento>
+        </routers>
+    </frontend>
+</config>
