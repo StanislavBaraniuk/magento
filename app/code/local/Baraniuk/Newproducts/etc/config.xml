@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Baraniuk_Newproducts>
+            <version>1.0.0</version>
+        </Baraniuk_Newproducts>
+    </modules>
+    <frontend>
+        <routers>
+            <baraniuk_newproducts>
+                <use>standard</use>
+                <args>
+                    <module>Baraniuk_Newproducts</module>
+                    <frontName>baraniuk_newproducts</frontName>
+                </args>
+            </baraniuk_newproducts>
+        </routers>
+        <layout>
+            <updates>
+                <baraniuk_newproducts module="newproducts">
+                    <file>Baraniuk_Newproducts.xml</file>
+                </baraniuk_newproducts>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <baraniuk_newproducts>
+                <class>Baraniuk_Newproducts_Block</class>
+            </baraniuk_newproducts>
+        </blocks>
+    </global>
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <baraniuk_newproducts_index_list>
+        <reference name="head">
+            <action method="setTitle">
+                <title>Baraniuk_Newproducts</title>
+            </action>
+        </reference>
+        <reference name="content">
+            <block name="baraniuk_newproducts.baraniuk_newproducts" as="baraniuk_newproducts" type="baraniuk_newproducts/list" template="Baraniuk_Newproducts/baraniuk_newproducts.phtml"/>
+        </reference>
+    </baraniuk_newproducts_index_list>
+</layout>
