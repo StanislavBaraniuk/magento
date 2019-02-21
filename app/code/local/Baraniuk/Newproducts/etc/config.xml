@@ -22,6 +22,17 @@
                 </baraniuk_newproducts>
             </updates>
         </layout>
+        <events>
+            <page_block_html_topmenu_gethtml_before>
+                <observers>
+                    <baraniuk_newproducts>
+                        <type>model</type>
+                        <method>insertToMenu</method>
+                        <class>Baraniuk_Newproducts_Model_Observer</class>
+                    </baraniuk_newproducts>
+                </observers>
+            </page_block_html_topmenu_gethtml_before>
+        </events>
     </frontend>
     <global>
         <blocks>
