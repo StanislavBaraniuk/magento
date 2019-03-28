@@ -52,7 +52,6 @@
 
         public function massDeleteAction()
         {
-//            $blocks = $this->getRequest()->getParams();
 
             try {
                 $shares = Mage::getModel(BARANIUK_SHARES::MODEL_SHARES)
@@ -100,6 +99,8 @@
 
                 $share = Mage::getModel(BARANIUK_SHARES::MODEL_SHARES)->load($this->getRequest()->getParam('id'));
 
+//                $this->setDates($share);
+
                 $share
                     ->setData($this->getRequest()->getParams());
 
@@ -138,6 +139,26 @@
             $this->_redirect('*/*/'.$this->getRequest()->getParam('back','index'),array('id'=>$share->getId()));
 
             return $this;
+        }
+
+        private function setDates (&$share) {
+            $share
+                ->setCreateDatetime(
+                    (new DateTime(
+                        'now', new DateTimeZone('GMT')
+                    ) )->format('Y-m-d H:i')
+                )
+                ->setStartDatetime(
+                    (new DateTime(
+                        $this->getRequest()->getParam('start_datetime'), new DateTimeZone('GMT')
+                    ) )->format('Y-m-d H:i')
+                )
+                ->setEndDatetime(
+                    (new DateTime(
+                        $this->getRequest()->getParam('end_datetime'), new DateTimeZone('GMT')
+                    ) )->format('Y-m-d H:i')
+                )
+                ->save();
         }
 
         private function setStatus (&$share) {
