@@ -5,7 +5,7 @@
     $defaultShares = [];
     $products = [];
 
-    for ($i = 0; $i < 20; $i++) {
+    for ($i = 0; $i < 50; $i++) {
         $startDate  = date("Y-m-d H:i", rand(1546300800,1561852800));
         $endDate    = date("Y-m-d H:i", rand(1561852800,1577664000));
 
@@ -21,7 +21,7 @@
                 'end_datetime' => $endDate
             );
 
-            $products[$i+1] = Mage::helper( BARANIUK_SHARES::HELPER_ADMIN )->randomGen(1, 906, rand(5,15));
+            $products[$i+1] = Mage::helper( BARANIUK_SHARES::HELPER_ADMIN )->randomGen(1, 906, rand(5,20));
 
         } catch (Exception $e) {
             trigger_error('Error in loading of the sample data Baraniuk_Shares');

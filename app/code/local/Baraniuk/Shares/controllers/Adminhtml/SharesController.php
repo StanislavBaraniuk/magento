@@ -2,10 +2,12 @@
 
     class Baraniuk_Shares_Adminhtml_SharesController extends Mage_Adminhtml_Controller_Action {
 
+        private $_share;
+
         public function _construct ()
         {
             Mage::getModel('baraniuk_shares/module');
-
+            $this->_share = Mage::getModel(BARANIUK_SHARES::MODEL_SHARES)->load($this->getRequest()->getParam('id'));
             parent::_construct();
         }
 
@@ -19,9 +21,16 @@
         }
 
         public function deleteAction () {
+
+            $share = Mage::getModel(BARANIUK_SHARES::MODEL_SHARES)->load($this->getRequest()->getParam('id'));
+
+            $this->deletePhoto($share->getImage());
+
             $block = Mage::getModel(BARANIUK_SHARES::MODEL_SHARES)
                 ->setId($this->getRequest()->getParam('id'))
                 ->delete();
+
+            $this->massProductsDelete($share->getId());
 
             if($block->getId()) {
                 Mage::getSingleton('adminhtml/session')->addSuccess('Block was deleted successfully!');
@@ -43,14 +52,16 @@
 
         public function massDeleteAction()
         {
-            $blocks = $this->getRequest()->getParams();
+//            $blocks = $this->getRequest()->getParams();
 
             try {
-                $blocks= Mage::getModel(BARANIUK_SHARES::MODEL_SHARES)
+                $shares = Mage::getModel(BARANIUK_SHARES::MODEL_SHARES)
                     ->getCollection()
                     ->addFieldToFilter('id', $this->getRequest()->getParam('ids'));
-                foreach($blocks as $block) {
-                    $block->delete();
+                foreach($shares as $share) {
+                    $this->deletePhoto($share->getImage());
+                    $share->delete();
+                    $this->massProductsDelete($share->getId());
                 }
             } catch(Exception $e) {
                 Mage::logException($e);
@@ -62,6 +73,15 @@
 
             return $this->_redirect('*/*/');
 
+        }
+
+        public function massProductsDelete ($shareId) {
+            $attachedProducts = Mage::getModel(BARANIUK_SHARES::MODEL_PRODUCTS)
+                ->getCollection()
+                ->addFieldToFilter('action_id', $shareId);
+            foreach($attachedProducts as $product) {
+                $product->delete();
+            }
         }
 
         public function editAction () {
@@ -224,9 +244,7 @@
         protected function deletePhoto ($image) {
             $photoPath = Mage::getBaseDir('media') . DS . $image;
 
-            unlink($photoPath);
-
-            return $this;
+            return unlink($photoPath);
         }
 
         public function productsAction() {
