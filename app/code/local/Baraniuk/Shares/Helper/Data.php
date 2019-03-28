@@ -25,4 +25,21 @@
 
             return $this;
         }
+
+        function generateRandomString($length = 10) {
+            $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY Z';
+            $charactersLength = strlen($characters);
+            $randomString = '';
+            for ($i = 0; $i < $length; $i++) {
+                $randomString .= $characters[rand(0, $charactersLength - 1)];
+            }
+            return $randomString;
+        }
+
+        function randomGen($min, $max, $quantity) {
+            $numbers = range($min, $max);
+            shuffle($numbers);
+            return array_slice($numbers, 0, $quantity);
+        }
+
     }

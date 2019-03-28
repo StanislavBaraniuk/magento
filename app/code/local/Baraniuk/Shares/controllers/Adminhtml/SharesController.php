@@ -134,7 +134,7 @@
         }
 
         private function setImage (&$share) {
-            $defautFileName = (new Mage_Adminhtml_Block_Widget)->getSkinUrl('images/placeholder/thumbnail.jpg');
+            $defautFileName = BARANIUK_SHARES::IMAGE_SHARE_DEFAULT;
 
             $is_delete = $this->getRequest()->getParam('image')['delete']
             and $share->getImage()['value'] != $defautFileName

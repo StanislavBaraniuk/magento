@@ -38,4 +38,6 @@
         const REGISTER_SHARES_TABS_MAIN = 'baraniuk_shares_admin_share_tabs_main';
 
         const TEMPLATE_SHARES_LIST = 'baraniuk_shares/baraniuk_shares.phtml';
+
+        const IMAGE_SHARE_DEFAULT = 'https://cdn4.iconfinder.com/data/icons/marketing-webby-1/60/010_-_Point_of_sale-512.png';
     }
