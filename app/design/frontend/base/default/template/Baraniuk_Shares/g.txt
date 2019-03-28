@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<?php
+    $_sharesCollection=$this->getCollection()->getData();
+    $_helper = $this->helper('baraniuk_shares/helper');
+?>
+
+
+<?php $this->getToolbarHTML(); ?>
+
+<div class="share-block">
+    <?php foreach ($_sharesCollection as $_share) : ?>
+    <div class="share-item" onclick="openSharePage('<?php echo $this->getLink($_share) ?>')">
+        <div class="photo" style="background-image: url('<?php echo $this->getImage($_share) ?>')">
+        </div>
+        <div class="info">
+            <div class="datetime">
+                <div class="date">
+                    FROM
+                    <?php echo $this->filterDate($this->getStartDate($_share)) ?>
+                    <?php echo $this->filterDate($this->getEndDate($_share)) ? 'TO' : '' ?>
+                    <?php echo $this->filterDate($this->getEndDate($_share)) ?>
+                </div>
+                <hr class="separator">
+            </div>
+            <div class="name">
+                <?php echo $this->getTitle($_share) ?>
+            </div>
+            <div class="description">
+                <?php echo $this->getShortDescription($_share) ?>
+           </div>
+       </div>
+   </div>
+    <?php endforeach; ?>
+</div>
+
+
+<style>
+    .share-block {
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    .share-item:hover {
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    }
+
+    .share-item:first-child {
+        margin-top: 0;
+    }
+
+    .share-item {
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+        margin: 1%;
+        background-color: #ffffff;
+        width: 98%;
+        height: 200px;
+        display: flex;
+    }
+
+    .photo {
+        background-color: #343434;
+        border-radius: 5px 0 0 5px;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .info {
+        width: calc(100% - 200px);
+        height: 100%;
+        padding: 10px;
+        padding-left: 0;
+        background-color: #343434;
+        border-radius: 0 5px 5px 0;
+        color: white;
+    }
+
+    .info .datetime {
+        width: 100%;
+    }
+
+    .info .datetime .date {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 17px;
+        text-align: left;
+    }
+
+    .info .datetime .time {
+        padding-left: 10px;
+        width: 100%;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .info .datetime .separator {
+        width: calc(100% - 10px);
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .info .name {
+        padding: 10px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .info .description {
+        padding: 10px;
+        padding-top: 0;
+        overflow-y: scroll;
+        height: 100px;
+    }
+
+   @media only screen and (max-width: 640px) {
+        .share-item {
+            height: 100%;
+            display: block;
+        }
+
+        .photo {
+            border-radius: 5px 5px 0 0 ;
+            width: 100% !important;
+        }
+
+        .info {
+            width: 100%;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .info .description {
+            height: 100%;
+            overflow: auto;
+        }
+    }
+</style>
+
+<script>
+    function openSharePage ($link) {
+        window.location.href = $link;
+    }
+</script>
