@@ -1,12 +1,9 @@
-
 <?php
     $_productCollection=$this->getCollection();
     $_helper = $this->helper('catalog/output');
     $_share = $this->getShare();
 ?>
-
 <?php if ($_productCollection && $_share && $_share->getStatus() == 2 && $_share->getIsActive()) : ?>
-
     <div class="h-space"></div>
     <h1 class="related-products-header">SHARED PRODUCTS</h1>
     <hr>
@@ -16,18 +13,14 @@
         <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
         <?php else: ?>
         <div class="category-products">
-
         <?php
             $_collectionSize = $_productCollection->count();
             $_columnCount = $this->getColumnCount();
         ?>
-
         <?php $i=0; foreach ($_productCollection as $_product): ?>
-
         <?php if ($i++%$_columnCount==0): ?>
             <ul class="products-grid products-grid--max-<?php echo $_columnCount; ?>-col">
         <?php endif ?>
-
             <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
                 <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>" width="135" height="135" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
                 <h2 class="product-name">
@@ -36,21 +29,14 @@
                 </h2>
                 <?php echo $this->getPriceHtml($_product, true) ?>
             </li>
-
         <?php if ($i%$_columnCount==0 || $i==$_collectionSize): ?>
             </ul>
         <?php endif; ?>
-
         <?php endforeach; ?>
-
         <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
-
     <?php endif; ?>
-
     </div>
-
 <?php endif; ?>
-
 <style>
 
 .related-products-header {

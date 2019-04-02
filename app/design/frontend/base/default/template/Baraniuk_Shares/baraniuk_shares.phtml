@@ -2,11 +2,8 @@
     $_sharesCollection=$this->getCollection();
     $_helper = $this->helper('baraniuk_shares/helper');
 ?>
-
 <?php if (!empty($_sharesCollection->getData())) : ?>
-
 <?php echo $this->getToolbarHtml() ?>
-
 <div class="share-block">
     <?php foreach ($_sharesCollection as $_share) : ?>
         <div class="share-item" onclick="openSharePage('<?php echo Mage::helper( BARANIUK_SHARES::HELPER_HTML )->getLink($_share) ?>')">
@@ -43,15 +40,11 @@
 <div class="toolbar-bottom">
     <?php echo $this->getToolbarHtml() ?>
 </div>
-
 <?php else : ?>
-
 <div class="is-empty">
     NOTHING to output :)
 </div>
-
 <?php endif; ?>
-
 <style>
     .share-block {
        display: flex;

@@ -1,13 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <?php
     $_share=$this->getItem();
     $_helper = $this->helper(BARANIUK_SHARES::HELPER_HTML);
-
 ?>
-
 <?php if ($_share && $_share->getStatus() == 2 && $_share->getIsActive() ) : ?>
-
 <div class="share-body">
     <?php
         if (!filter_var(Mage::helper( BARANIUK_SHARES::HELPER_HTML )->getImage($_share), FILTER_VALIDATE_URL)) {
@@ -30,15 +26,11 @@
         <?php echo Mage::helper( BARANIUK_SHARES::HELPER_HTML )->getDescription($_share) ?>
     </p>
 </div>
-
 <?php else : ?>
-
 <div class="is-empty">
     NOT FOUND
 </div>
-
 <?php endif; ?>
-
 <style>
 
 .share-body {
