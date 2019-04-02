@@ -23,10 +23,9 @@
                 ->addStoreFilter($storeId)
                 ->addFieldToFilter('status', Mage_Catalog_Model_Product_Status::STATUS_ENABLED)
                 ->addFieldToFilter('visibility', Mage_Catalog_Model_Product_Visibility::VISIBILITY_BOTH)
-                ->addFieldToFilter('entity_id', $this->getProductsId($shareProductCollection))
+                ->addFieldToFilter('entity_id', array('in' => $this->getProductsId($shareProductCollection)))
                 ->addAttributeToSort('created_at', 'DESC');
 
-            $d = $productsCollection->getData();
             return $productsCollection;
         }
 

@@ -9,9 +9,12 @@
 
             foreach ($collection as $item) {
                 $newStatus = Mage::helper(BARANIUK_SHARES::HELPER_ADMIN)->calculateShareStatus($item->getStartDatetime(), $item->getEndDatetime());
-                $_model->setData($item->getData())
-                    ->setStatus($newStatus)
-                    ->save();
+
+                if ($item->getStatus() != $newStatus) {
+                    $_model->setData( $item->getData() )
+                        ->setStatus( $newStatus )
+                        ->save();
+                }
             }
 
             return $this;
