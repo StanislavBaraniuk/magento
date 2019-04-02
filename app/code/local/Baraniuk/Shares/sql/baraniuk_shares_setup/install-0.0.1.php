@@ -48,7 +48,3 @@
 
 
     $installer->endSetup();
-
-
-
-?>

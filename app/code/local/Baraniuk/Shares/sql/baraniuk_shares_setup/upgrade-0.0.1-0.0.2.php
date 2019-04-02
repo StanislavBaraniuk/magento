@@ -22,4 +22,3 @@
     }
 
     $installer->endSetup();
-?>
