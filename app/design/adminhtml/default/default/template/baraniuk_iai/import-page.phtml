@@ -1,0 +1,61 @@
+
+<div class="content-block">
+    <div class="content-block-header">
+        <div class="element text">Import page</div>
+        <div class="element buttons">
+            <button><- Back</button>
+            <button>Import</button>
+        </div>
+    </div>
+    <div class="h10"></div>
+    <hr>
+    <div class="h10"></div>
+    <div class="form">
+        <div class="element">
+            <label for="file">Import file</label>
+            <input type="file" name="file">
+        </div>
+    </div>
+</div>
+
+<style>
+
+
+    .content-block-header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content-block-header .element {
+        width: 50%;
+    }
+
+    .content-block-header .element:first-child {
+        text-align: left;
+    }
+
+    .content-block-header .element:last-child {
+       text-align: right;
+    }
+
+    .content-block-header .text {
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .h10 {
+        height: 10px;
+    }
+
+    .content-block .form .element {
+        height: 25px;
+        width: 100%;
+        display: flex;
+        padding: 10px;
+    }
+
+    .content-block .form .element label {
+        width: 10%;
+        font-size: 12px;
+    }
+</style>
