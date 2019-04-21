@@ -1,0 +1,9 @@
+a:5:{i:0;s:62:"Unable to Connect to ssl://images.unsplash.com:443. Error #0: ";i:1;s:1065:"#0 /Applications/AMPPS/www/magento/lib/Zend/Http/Client.php(1073): Zend_Http_Client_Adapter_Socket->connect('ssl://images.un...', 443, true)
+#1 /Applications/AMPPS/www/magento/app/code/local/Baraniuk/IAI/controllers/Adminhtml/IaiController.php(51): Zend_Http_Client->request('GET')
+#2 /Applications/AMPPS/www/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Baraniuk_IAI_Adminhtml_IAIController->indexAction()
+#3 /Applications/AMPPS/www/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('index')
+#4 /Applications/AMPPS/www/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#5 /Applications/AMPPS/www/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#6 /Applications/AMPPS/www/magento/app/Mage.php(686): Mage_Core_Model_App->run(Array)
+#7 /Applications/AMPPS/www/magento/index.php(85): Mage::run('', 'store')
+#8 {main}";s:3:"url";s:72:"/magento/index.php/admin/iai/index/key/b4dd5d57003bf0c4689998752b0fa96f/";s:11:"script_name";s:18:"/magento/index.php";s:4:"skin";s:5:"admin";}

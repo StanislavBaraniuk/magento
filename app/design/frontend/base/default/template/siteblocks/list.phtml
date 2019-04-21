@@ -1,0 +1,16 @@
+<?php foreach($this->getBlocks() as $block):?>
+    <div class="siteblock">
+        <div class="block-title"><?php echo $block->getTitle()?></div>
+        <div class="block-image">
+            <?php if($block->getImage()):?>
+                <img src="<?php echo $block->getImageSrc()?>" height="150" width="auto" alt="<?php $block->getTitle()?>" title="<?php $block->getTitle()?>">
+            <?php endif;?>
+        </div>
+        <div class="block-content"><?php echo $this->getBlockContent($block)?></div>
+        <div class="block-product-list">
+            <?php echo $this->getProductsList($block)?>
+        </div>
+    </div>
+<?php endforeach;?>
+
+<?php echo $this->getLayout()->createBlock('siteblocks/list')->setTemplate('siteblocks/list1.phtml')?>

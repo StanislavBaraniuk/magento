@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee266ee4-08e9-42a8-9a95-25878c5b97d7" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Baraniuk_IAI.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/locale/ru_RU/Baraniuk_IAI.csv">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Widget/Form/Container.php</find>
+      <find>Container.php</find>
+      <find>layout</find>
+      <find>class Mage_Adminhtml_Block_Widget_Form_Container</find>
+      <find>BARANIUK_SHARES::MODEL_SHARES</find>
+      <find>_</find>
+      <find>Export</find>
+      <find>models</find>
+      <find>interface Mage_Shipping_Model_Carrier_Interface</find>
+      <find>_html_before</find>
+      <find>getTabs</find>
+      <find>addContent($this-&gt;getLayout()-&gt;createBlock(</find>
+      <find>add</find>
+      <find>setSaveParametersInSession</find>
+      <find>adminhtml_shares_edit_tab_products_grid</find>
+      <find>&lt;module&gt;</find>
+      <find>baraniuk_iai_id</find>
+      <find>media</find>
+      <find>mac</find>
+      <find>$connected</find>
+      <find>$_imgUrl</find>
+      <find>img</find>
+      <find>$_product</find>
+      <find>image</find>
+      <find>addImageToMediaGallery</find>
+      <find>getNameType</find>
+      <find>$_helperImages</find>
+      <find>error</find>
+      <find>$response</find>
+      <find>baraniuk_iai/helper</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/app/code/core/Mage/Backup</dir>
+      <dir>$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/product</dir>
+      <dir>$PROJECT_DIR$/skin/frontend/base</dir>
+      <dir>$PROJECT_DIR$/app/design/frontend/base</dir>
+      <dir>$PROJECT_DIR$/app/code/local/Baraniuk/Newproducts</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/app/code/local/Baraniuk/Shares</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Helper.php" />
+        <option value="$PROJECT_DIR$/media/baraniuk_iai/indexx.html" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Observer1.php" />
+        <option value="$PROJECT_DIR$/app/design/adminhtml/default/default/layout/baraniuk_shares.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Data.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/etc/adminhtml.xml" />
+        <option value="$PROJECT_DIR$/lib/Varien/Data/Form.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/IAI.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/Import.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/Shares/Block/Adminhtml/Shares/Edit/Tab/Main.php" />
+        <option value="$PROJECT_DIR$/app/design/adminhtml/default/default/template/baraniuk_iai/import-page.phtml" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Widget/Form/Container.php" />
+        <option value="$PROJECT_DIR$/lib/Varien/Data/Form/Element/Abstract.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/IAI.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Attributes/Interfaces/AttributesExistInterface.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Attributes/AttributesExistInterface.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Attributes/Attributes.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Attributes.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Attributes/AttributesExist.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Edit/Tabs.php" />
+        <option value="$PROJECT_DIR$/app/design/adminhtml/default/default/template/baraniuk_iai/popup.phtml" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/Shares/Block/Adminhtml/Shares/Edit/Form.php" />
+        <option value="$PROJECT_DIR$/app/locale/ru_RU/Baraniuk_IAI.csv" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/Shares/Block/Adminhtml/Shares/Edit/Tab/Products.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/Catalog/Product/Tab/Grid/Grid.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/Catalog/Product/Tab.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/IAI/Product/GridContainer.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/IAI/Product/GridContainer/Grid.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/Catalog/Product/Tab/GridContainer/Grid.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/Catalog/Product/Tab/GridContainer.php" />
+        <option value="$PROJECT_DIR$/app/design/adminhtml/default/default/layout/baraniuk_iai.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Observer.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/etc/config.xml" />
+        <option value="$PROJECT_DIR$/da.php" />
+        <option value="$PROJECT_DIR$/var/session/sess_1d6414caa00fb91a846d1faf246d8fda" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/Shares/controllers/Adminhtml/SharesController.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Product.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Parser.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Images.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/FileWorker.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Http.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/sql/baraniuk_iai_setup/install-0.0.1.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/Renderer/Size.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Renderer/Size.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/Catalog/Product/Tab/Grid.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Images.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Image.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Cron.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/controllers/Adminhtml/IAIController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/IAI/Import.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/IAI/Import/Form.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="PhpDebugGeneral" zd_debug_can_accept_external_connections="false" zd_debug_port="80" />
+  <component name="PhpServers">
+    <servers>
+      <server host="http://127.0.0.1/magento/" id="6de945cb-d515-40f0-a93a-5acd920530d6" name="debug" port="9000" use_path_mappings="true" />
+      <server host="127.0.0.1" id="833299de-8ce3-492c-b806-96f4de720121" name="127.0.0.1" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="" />
+    </include_path>
+  </component>
+  <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="http://127.0.0.1/magento/" port="9000" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1134" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="Baraniuk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="baraniuk_iai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="Baraniuk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="Baraniuk" type="462c0819:PsiDirectoryNode" />
+              <item name="IAI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="Baraniuk" type="462c0819:PsiDirectoryNode" />
+              <item name="IAI" type="462c0819:PsiDirectoryNode" />
+              <item name="Block" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="magento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="Baraniuk" type="462c0819:PsiDirectoryNode" />
+              <item name="IAI" type="462c0819:PsiDirectoryNode" />
+              <item name="Block" type="462c0819:PsiDirectoryNode" />
+              <item name="Adminhtml" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Constants" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Applications/AMPPS/www/magento/app/design/frontend/base/default/template/Baraniuk_Newproducts/baraniuk_newproducts.phtml" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block" />
+      <recent name="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/Catalog" />
+      <recent name="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model" />
+      <recent name="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper" />
+      <recent name="$PROJECT_DIR$/media/baraniuk_iai" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/Catalog" />
+      <recent name="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block" />
+      <recent name="$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Resource" />
+      <recent name="$PROJECT_DIR$/app/design/frontend/base/default/template" />
+      <recent name="$PROJECT_DIR$/app/design/adminhtml/default/default/template" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Remote Debug.xdebuger">
+    <configuration name="IndexController.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/code/local/Baraniuk/Newproducts/controllers/IndexController.php" />
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php" />
+    <configuration name="xdebuger" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="debug" session_id="PHPSTORM" />
+    <list>
+      <item itemvalue="PHP Remote Debug.xdebuger" />
+      <item itemvalue="PHP Script.IndexController.php" />
+      <item itemvalue="PHP Script.index.php" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="PHP Script.IndexController.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee266ee4-08e9-42a8-9a95-25878c5b97d7" name="Default" comment="" />
+      <created>1548854674140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548854674140</updated>
+      <workItem from="1548854677032" duration="1538000" />
+      <workItem from="1548950530027" duration="503000" />
+      <workItem from="1549182803438" duration="15000" />
+      <workItem from="1549183375244" duration="6405000" />
+      <workItem from="1549400608409" duration="4102000" />
+      <workItem from="1549406385188" duration="4186000" />
+      <workItem from="1549435702328" duration="18480000" />
+      <workItem from="1549788715722" duration="108000" />
+      <workItem from="1550057789030" duration="13032000" />
+      <workItem from="1550667605190" duration="9581000" />
+      <workItem from="1550741378216" duration="2892000" />
+      <workItem from="1550744790691" duration="9066000" />
+      <workItem from="1551467254217" duration="1731000" />
+      <workItem from="1551785081641" duration="39000" />
+      <workItem from="1551785147294" duration="7688000" />
+      <workItem from="1552124734885" duration="313000" />
+      <workItem from="1552383439863" duration="470000" />
+      <workItem from="1552384590338" duration="8169000" />
+      <workItem from="1552464301861" duration="73259000" />
+      <workItem from="1552893437517" duration="19485000" />
+      <workItem from="1553024131215" duration="104118000" />
+      <workItem from="1553471400769" duration="121456000" />
+      <workItem from="1553790728330" duration="16083000" />
+      <workItem from="1553848693979" duration="905000" />
+      <workItem from="1553943844778" duration="46000" />
+      <workItem from="1554204485995" duration="1813000" />
+      <workItem from="1554209651378" duration="2216000" />
+      <workItem from="1554455487559" duration="390000" />
+      <workItem from="1555066569647" duration="18951000" />
+      <workItem from="1555140326589" duration="19009000" />
+      <workItem from="1555339051892" duration="2194000" />
+      <workItem from="1555400165914" duration="18866000" />
+      <workItem from="1555444584605" duration="72651000" />
+      <workItem from="1555704682297" duration="43725000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="603485000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4997367" weight="0.32977778" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.57030016" side_tool="true" weight="0.35022223" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32977778" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.32977778" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4986835" visible="true" weight="0.208" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1970181" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24973376" />
+      <window_info anchor="bottom" id="Statistic" order="9" sideWeight="0.4986835" weight="0.32977778" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="Database" order="3" weight="0.32596102" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997367" weight="0.32977778" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.42969984" weight="0.35022223" />
+      <window_info anchor="bottom" id="Thumbnails" order="13" sideWeight="0.4997367" weight="0.32977778" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/code/local/Baraniuk/Shares/sql/baraniuk_shares_setup/upgrade-0.0.2-0.0.3.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/code/local/Baraniuk/Shares/MODULE_CONSTANTS.php</url>
+          <line>5</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/code/local/Baraniuk/Shares/controllers/Adminhtml/SharesController.php</url>
+          <line>99</line>
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Widget/Container.php</url>
+          <line>139</line>
+          <option name="timeStamp" value="330" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/IAI/Product/GridContainer/Grid.php</url>
+          <line>152</line>
+          <option name="timeStamp" value="407" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product.php</url>
+          <line>33</line>
+          <option name="timeStamp" value="433" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="perl_line_breakpoint">
+          <url>file://$PROJECT_DIR$/app/design/frontend/base/default/template/Baraniuk_Shares/baraniuk_shares_show_products.phtml</url>
+          <line>1</line>
+          <option name="timeStamp" value="281" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="470" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&quot;id&quot;</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>$image-&gt;getStatus()</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>$args[0]</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>$response</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>$response-&gt;getHeader('Content-length')</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>$response-&gt;getStatus()</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>$response['code']</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>$response-&gt;getCode()</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>$response-&gt;getCode()\</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>$response-&gt;getCode</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/var/report/1905087895">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/report/2046873038">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Resource/Images.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Resource/Images/Collection.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Images/Image.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="1041" column="20" selection-start-line="1041" selection-start-column="20" selection-end-line="1041" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/baraniuk_iai/photo-1516589178581-6cd7833ae3b2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=80.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="766" column="9" selection-start-line="766" selection-start-column="9" selection-end-line="766" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/report/198062046">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Convert.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Design.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Model/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="1299" selection-start-line="1299" selection-end-line="1299" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="549" selection-start-line="549" selection-end-line="549" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/catalog/product/p/m/pmtk006a_3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/catalog/product/p/h/photo-1531804055935-76f44d7c3621_3.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/baraniuk_iai/pexels-photo-207962.jpeg?cs=srgb&amp;dl=artistic-blossom-bright-207962.jpg&amp;fm=jpg.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/baraniuk_iai/pexels-photo-207962.jpeg?cs=srgb&amp;dl=artistic-blossom-bright-207962.jpg&amp;fm=jpg_1.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/catalog/product/p/e/pexels-photo-207962.jpeg_cs_srgb_dl_artistic-blossom-bright-207962.jpg_fm_jpg.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="235" selection-start-line="235" selection-end-line="235" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Index/Model/Lock.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Varien/Io/File.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/sql/baraniuk_iai_setup/install-0.0.1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="64" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Zend/Http/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="361" selection-start-line="361" selection-end-line="361" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/Shares/Block/Adminhtml/Renderer/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Renderer/Size.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Model/Abstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="306" selection-start-line="306" selection-end-line="306" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Varien/Autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Varien/Object.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="637" selection-start-line="637" selection-end-line="637" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="112" column="35" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/etc/adminhtml.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/Shares/Model/Observer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/Shares/Model/Cron.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/Shares/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1176" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-231">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/IAI/Import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/IAI/Import/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/Catalog/Product/Tab.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Block/Adminhtml/Catalog/Product/Tab/Grid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/controllers/Adminhtml/IAIController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Attributes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Data.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/FileWorker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Helper.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Http.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Images.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Helper/Parser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Cron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Images.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Baraniuk/IAI/Model/Observer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/locale/ru_RU/Baraniuk_IAI.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
