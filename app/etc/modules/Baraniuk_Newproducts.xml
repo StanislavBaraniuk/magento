@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-<config>
-    <modules>
-        <Baraniuk_Newproducts>
-            <active>true</active>
-            <codePool>local</codePool>
-        </Baraniuk_Newproducts>
-    </modules>
-</config>

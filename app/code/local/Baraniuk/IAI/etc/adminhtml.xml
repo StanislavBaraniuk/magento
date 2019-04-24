@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--<config>-->
+    <!--<menu>-->
+        <!--<baraniuk_iai module="baraniuk_iai" translate="title">-->
+            <!--<title>IAI</title>-->
+            <!--<sort_order>71</sort_order>-->
+            <!--<children>-->
+                <!--<baraniuk_iai module="baraniuk_iai" translate="title">-->
+                    <!--<title>Manage Items</title>-->
+                    <!--<sort_order>0</sort_order>-->
+                    <!--<action>adminhtml/iai</action>-->
+                <!--</baraniuk_iai>-->
+                <!--<settings module="baraniuk_iai" translate="title">-->
+                    <!--<title>Settings</title>-->
+                    <!--<sort_order>1000</sort_order>-->
+                    <!--<action>adminhtml/system_config/edit/section/lesson06</action>-->
+                <!--</settings>-->
+            <!--</children>-->
+        <!--</baraniuk_iai>-->
+    <!--</menu>-->
+    <!--<acl>-->
+        <!--<resources>-->
+            <!--<all>-->
+                <!--<title>Allow Everything</title>-->
+            <!--</all>-->
+            <!--<admin>-->
+                <!--<children>-->
+                    <!--<system>-->
+                        <!--<children>-->
+                            <!--<config>-->
+                                <!--<children>-->
+                                    <!--<baraniuk_iai module="baraniuk_iai" translate="title">-->
+                                        <!--<title>baraniuk_iai</title>-->
+                                        <!--<sort_order>71</sort_order>-->
+                                    <!--</baraniuk_iai>-->
+                                <!--</children>-->
+                            <!--</config>-->
+                        <!--</children>-->
+                    <!--</system>-->
+                    <!--<baraniuk_iai module="baraniuk_iai" translate="title">-->
+                        <!--<title>baraniuk_iai</title>-->
+                        <!--<sort_order>71</sort_order>-->
+                        <!--<children>-->
+                            <!--<lesson06 module="baraniuk_iai" translate="title">-->
+                                <!--<title>Manage Items</title>-->
+                                <!--<sort_order>0</sort_order>-->
+                            <!--</lesson06>-->
+                            <!--<settings module="baraniuk_iai" translate="title">-->
+                                <!--<title>Settings</title>-->
+                                <!--<sort_order>1000</sort_order>-->
+                            <!--</settings>-->
+                        <!--</children>-->
+                    <!--</baraniuk_iai>-->
+                <!--</children>-->
+            <!--</admin>-->
+        <!--</resources>-->
+    <!--</acl>-->
+<!--</config>-->

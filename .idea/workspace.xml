@@ -1,7 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee266ee4-08e9-42a8-9a95-25878c5b97d7" name="Default" comment="" />
+    <list default="true" id="ee266ee4-08e9-42a8-9a95-25878c5b97d7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/etc/modules/Baraniuk_Hellomagento.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/etc/modules/Baraniuk_IAI.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/etc/modules/Baraniuk_Newproducts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/locks/index_process_1.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/locks/index_process_2.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/locks/index_process_3.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/locks/index_process_4.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/locks/index_process_5.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/locks/index_process_6.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/locks/index_process_7.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/locks/index_process_8.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/locks/index_process_9.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Cm_RedisSession-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Interface_Adminhtml_Default-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Interface_Frontend_Base_Default-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Interface_Frontend_Default-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Interface_Frontend_Rwd_Default-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Interface_Install_Default-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Cm-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Credis-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Google_Checkout-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_IDNA2-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Js_Calendar-1.51.1.17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Js_Ext-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Js_Mage-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Js_Prototype-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Js_TinyMCE-3.5.11.16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_LinLibertineFont-2.8.14.17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Mage-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Magento-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Mcryptcompat-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Pelago-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Phpseclib-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Unserialize-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_Varien-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_ZF-1.12.10.16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Lib_ZF_Locale-1.12.10.16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Mage_All_Latest-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Mage_Centinel-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Mage_Compiler-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Mage_Core_Adminhtml-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Mage_Core_Modules-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Mage_Downloader-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Mage_Locale_en_US-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Magento_Mobile-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/package/Phoenix_Moneybookers-1.9.4.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1111266072" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1168134519" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1331167381" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1375302865" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/142685531" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1534860548" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1639134952" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1757517588" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1796329138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1806022372" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/184990362" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1905087895" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1928868279" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/198062046" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/1990816876" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/2000845769" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/2029470502" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/2046873038" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/2123719773" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/251815326" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/305862538" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/347784057" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/356493959" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/413978465" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/414598780" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/419908837" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/424719062" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/492937310" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/613231689" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/633951761" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/682810815" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/840014685" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/868764562" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/887805423" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/report/908041604" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/resource_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_09d0b63847dda5faac01d367539ffd5a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_11964ba1e4044909356a37a03acdf61a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_18879d4c4098a0f5ac12e8fa4f6fb3cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_1ae365b5c89a11664eeed79bc7306c17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_1d6414caa00fb91a846d1faf246d8fda" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_1f7745faa7408923c748268fe3b55dd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_233bfd6610f2489ed99651df6b8c89c2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_26517525aac546bd395f7d4f376b4900" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_2f6b6102e3b506389360b57c4609ffe1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_356b6b8f6fd3b3c8faeaa0043b784a1a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_44f88efe432c7cc83ac33a2c942e885a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_4ac95de9f82fe5088351839ca323e15c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_52386408011e72acb352cece09edc4c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_529edf3fbf8d7369e1a82380c96cd1fe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_569405368fb9afd9b4e86b454ae3f8fa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_5896538411ba9ac424ad9e17079422ef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_6057ecbdd2ae238b13fbbf3457b38bfd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_6a1da3c17e2622c47d8d6f2a1131d501" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_6ff661dce6cb0f8495d6c1a14b936526" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_74f723b4eca34dbc4c664e37ec9437f4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_783b311ca2faa4f48ffc10743c610a00" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_7a276d62c4e8b206c65f12c77718f287" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_7f3599daadc6b746064adb6ce6f90b88" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_8527ecf0f8ea640963b6b4437879bda5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_87b251e00acdb420662058c83c769473" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_8fef1819475bd386e7767e8b5070ee56" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_91dc84dacac2e8a0f1a471401d9790d5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_9933f6396dd369228748bf7951d99359" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_9b1c75581c9403471a29992ece399d50" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_a96fef4b8b40484953e63e5f92cd8972" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_acd46504a255670330245a4348c518b4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_ae9ddb5b1d423b28d360c838bde1f993" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_cfa3215db3f4a2fbe958da24c3dc6694" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_d134544808ddfd942d2d5303449e5672" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_d84afaf04d28562f3ba5335275551ed5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_dd6729f7feef118b03d77c2ea54824d0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_de17f8179da70e3bf6a562572e8481f8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_debd38aab9dd72cdcd7b52ca07a2b096" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_e934beb54ccd77590efd92acfc1dcbb8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_f3301bb10c0a5d291de7fe730cae3af9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_fae6e404cd0cdcaef55057238ec7f965" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/session/sess_fbb9a3cd251e90ab5fcdf4128810f843" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,13 +151,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Baraniuk_IAI.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/locale/ru_RU/Baraniuk_IAI.csv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -211,118 +332,19 @@
               <item name="magento" type="b2602c69:ProjectViewProjectNode" />
               <item name="magento" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
-              <item name="Baraniuk" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magento" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magento" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="baraniuk_iai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magento" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="magento" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="magento" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="magento" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="magento" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="magento" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="magento" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
-              <item name="Baraniuk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="magento" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
-              <item name="Baraniuk" type="462c0819:PsiDirectoryNode" />
-              <item name="IAI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="magento" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
-              <item name="Baraniuk" type="462c0819:PsiDirectoryNode" />
-              <item name="IAI" type="462c0819:PsiDirectoryNode" />
-              <item name="Block" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="magento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="magento" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
-              <item name="Baraniuk" type="462c0819:PsiDirectoryNode" />
-              <item name="IAI" type="462c0819:PsiDirectoryNode" />
-              <item name="Block" type="462c0819:PsiDirectoryNode" />
-              <item name="Adminhtml" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -431,12 +453,12 @@
       <workItem from="1555339051892" duration="2194000" />
       <workItem from="1555400165914" duration="18866000" />
       <workItem from="1555444584605" duration="72651000" />
-      <workItem from="1555704682297" duration="43725000" />
+      <workItem from="1555704682297" duration="45048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="603485000" />
+    <option name="totallyTimeSpent" value="604808000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Baraniuk_IAI>
+            <version>0.0.1</version>
+        </Baraniuk_IAI>
+    </modules>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <use>admin</use>
+                <args>
+                    <modules>
+                        <baraniuk_iai after="Mage_Adminhtml">Baraniuk_IAI_Adminhtml</baraniuk_iai>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <baraniuk_iai module="baraniuk_iai">
+                    <file>baraniuk_iai.xml</file>
+                </baraniuk_iai>
+            </updates>
+        </layout>
+        <events>
+            <adminhtml_widget_container_html_before>
+                <observers>
+                    <baraniuk_shares>
+                        <type>model</type>
+                        <method>insertButtonToProductList</method>
+                        <class>Baraniuk_IAI_Model_Observer</class>
+                    </baraniuk_shares>
+                </observers>
+            </adminhtml_widget_container_html_before>
+        </events>
+    </adminhtml>
+
+    <global>
+        <blocks>
+            <baraniuk_iai>
+                <class>Baraniuk_IAI_Block</class>
+            </baraniuk_iai>
+        </blocks>
+        <models>
+            <baraniuk_iai>
+                <class>Baraniuk_IAI_Model</class>
+                <resourceModel>iai_resource</resourceModel>
+            </baraniuk_iai>
+            <iai_resource>
+                <class>Baraniuk_IAI_Model_Resource</class>
+                <entities>
+                    <images>
+                        <table>baraniuk_iai_images</table>
+                    </images>
+                </entities>
+            </iai_resource>
+        </models>
+        <resources>
+            <baraniuk_iai_setup>
+                <setup>
+                    <module>Baraniuk_IAI</module>
+                </setup>
+            </baraniuk_iai_setup>
+        </resources>
+        <helpers>
+            <baraniuk_iai>
+                <class>Baraniuk_IAI_Helper</class>
+            </baraniuk_iai>
+        </helpers>
+    </global>
+    <crontab>
+        <jobs>
+            <baraniuk_iai_update_status>
+                <schedule>
+                    <cron_expr>*/5 * * * * </cron_expr>
+                </schedule>
+                <run>
+                    <model>baraniuk_iai/cron::process</model>
+                </run>
+            </baraniuk_iai_update_status>
+        </jobs>
+    </crontab>
+</config>

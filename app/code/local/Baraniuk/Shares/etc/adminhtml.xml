@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <baraniuk module="baraniuk_shares">
+            <title>BARANIUK</title>
+            <sort_order>100</sort_order>
+            <children>
+                <shares>
+                    <title>Shares</title>
+                    <sort_order>1</sort_order>
+                    <action>adminhtml/shares</action>
+                </shares>
+            </children>
+        </baraniuk>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <baraniuk module="baraniuk_shares">
+                                        <title>BARANIUK</title>
+                                        <!--<sort_order>100</sort_order>-->
+                                        <!--<children>-->
+                                            <!--<shares>-->
+                                                <!--<title>Shares</title>-->
+                                                <!--<sort_order>1</sort_order>-->
+                                                <!--<action>adminhtml/shares</action>-->
+                                            <!--</shares>-->
+                                        <!--</children>-->
+                                    </baraniuk>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
+
+
