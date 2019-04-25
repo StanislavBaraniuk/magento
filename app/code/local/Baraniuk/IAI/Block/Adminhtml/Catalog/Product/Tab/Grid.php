@@ -101,6 +101,3 @@
             return $this->getUrl( '*/iai/grid' , array( '_current' => true ) );
         }
     }
-
-
-
