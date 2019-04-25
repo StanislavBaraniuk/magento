@@ -10,44 +10,44 @@
         /**
          * @return Baraniuk_IAI_Model_Image
          */
-        public function loadImages (): Generator
+        public function loadImages(): Generator
         {
 
-            $imagesModel = Mage::getModel( 'baraniuk_iai/images' );
+            $imagesModel = Mage::getModel('baraniuk_iai/images');
 
             $images = $imagesModel->getCollection()
-                ->addFieldToFilter( $imagesModel::COLUMN_LOAD_STATUS , array( "lt" => $imagesModel::STATUS_LOADED ) );
+                ->addFieldToFilter($imagesModel::COLUMN_LOAD_STATUS, array("lt" => $imagesModel::STATUS_LOADED));
 
             foreach ($images as $image) {
-                yield new Baraniuk_IAI_Model_Image( $image );
+                yield new Baraniuk_IAI_Model_Image($image);
             }
         }
 
-        public function getFileSize ( $bytes )
+        public function getFileSize($bytes)
         {
             $i = -1;
-            $byteUnits = [ ' kB' , ' MB' , ' GB' , ' TB' , 'PB' , 'EB' , 'ZB' , 'YB' ];
+            $byteUnits = [' kB', ' MB', ' GB', ' TB', 'PB', 'EB', 'ZB', 'YB'];
             do {
                 $bytes = $bytes / 1000;
                 $i++;
             } while ($bytes > 1000);
 
-            return number_format( $bytes , 2 , '.' , ' ' ) . $byteUnits[ $i ];
+            return number_format($bytes, 2, '.', ' ') . $byteUnits[ $i ];
         }
 
-        public function isToday ( $date )
+        public function isToday($date)
         {
 
-            date_default_timezone_set( ( new DateTimeZone( "GMT" ) ) );
+            date_default_timezone_set((new DateTimeZone("GMT")));
 
             $today = new DateTime(); // This object represents current date/time
-            $today->setTime( 0 , 0 , 0 ); // reset time part, to prevent partial comparison
+            $today->setTime(0, 0, 0); // reset time part, to prevent partial comparison
 
-            $match_date = new DateTime( $date );
-            $match_date->setTime( 0 , 0 , 0 ); // reset time part, to prevent partial comparison
+            $match_date = new DateTime($date);
+            $match_date->setTime(0, 0, 0); // reset time part, to prevent partial comparison
 
-            $diff = $today->diff( $match_date );
-            $diffDays = (integer) $diff->format( "%R%a" ); // Extract days count in interval
+            $diff = $today->diff($match_date);
+            $diffDays = (integer)$diff->format("%R%a"); // Extract days count in interval
 
             switch ($diffDays) {
                 case 0:

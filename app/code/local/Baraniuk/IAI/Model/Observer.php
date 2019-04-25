@@ -10,20 +10,20 @@
     class Baraniuk_IAI_Model_Observer
     {
 
-        public function insertButtonToProductList ( $observer )
+        public function insertButtonToProductList($observer)
         {
 
-            if ($observer->getData( 'block' )->getData()[ 'type' ] === "adminhtml/catalog_product") {
-                $observer->getData( 'block' )->addButton( 'iai' , array(
-                    'label' => Mage::helper( 'adminhtml' )->__( 'Import of images' ) ,
-                    'onclick' => 'redirect()' ,
+            if ($observer->getData('block')->getData()[ 'type' ] === "adminhtml/catalog_product") {
+                $observer->getData('block')->addButton('iai', array(
+                    'label' => Mage::helper('adminhtml')->__('Import of images'),
+                    'onclick' => 'redirect()',
                     'class' => 'importProducts'
-                ) , -100 );
+                ), -100);
 
                 echo "
                     <script>
                         function redirect() {
-                            window.location.href = '" . Mage::helper( "adminhtml" )->getUrl( "adminhtml/iai/index/" ) . "';
+                            window.location.href = '" . Mage::helper("adminhtml")->getUrl("adminhtml/iai/index/") . "';
                         }
                        
                     </script>

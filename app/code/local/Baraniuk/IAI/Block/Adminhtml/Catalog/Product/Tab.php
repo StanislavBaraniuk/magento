@@ -9,9 +9,9 @@
          *
          * @return string
          */
-        public function getTabLabel ()
+        public function getTabLabel()
         {
-            return $this->__( 'Auto imported images' );
+            return $this->__('Auto imported images');
         }
 
         /**
@@ -19,9 +19,9 @@
          *
          * @return string
          */
-        public function getTabTitle ()
+        public function getTabTitle()
         {
-            return $this->__( 'Import of images' );
+            return $this->__('Import of images');
         }
 
         /**
@@ -30,7 +30,7 @@
          *
          * @return bool
          */
-        public function canShowTab ()
+        public function canShowTab()
         {
             return true;
         }
@@ -40,24 +40,24 @@
          *
          * @return bool
          */
-        public function isHidden ()
+        public function isHidden()
         {
             return false;
         }
 
-        public function getClass ()
+        public function getClass()
         {
             return 'ajax';
         }
 
-        public function getTabClass ()
+        public function getTabClass()
         {
             return 'ajax';
         }
 
-        public function getTabUrl ()
+        public function getTabUrl()
         {
-            return $this->getUrl( '*/iai/grid' , array( '_current' => true ) );
+            return $this->getUrl('*/iai/grid', array('_current' => true));
         }
 
     }

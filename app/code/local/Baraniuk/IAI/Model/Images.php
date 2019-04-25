@@ -28,10 +28,10 @@
         /** @var int If load trying has a 404 error */
         const STATUS_RETRY = 1;
 
-        public function _construct ()
+        public function _construct()
         {
             parent::_construct();
-            $this->_init( "baraniuk_iai/images" );
+            $this->_init("baraniuk_iai/images");
 
         }
 

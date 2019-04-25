@@ -6,23 +6,23 @@
         protected $_blockGroup = "baraniuk_iai";
         protected $_controller = "adminhtml_iai";
 
-        public function __construct ()
+        public function __construct()
         {
             parent::__construct();
-            $this->_removeButton( 'back' );
-            $this->_removeButton( 'save' );
+            $this->_removeButton('back');
+            $this->_removeButton('save');
 
-            $this->_addButton( 'back' , array(
-                'label' => Mage::helper( 'baraniuk_iai/data' )->__( 'Back' ) ,
-                'onclick' => 'back()' ,
+            $this->_addButton('back', array(
+                'label' => Mage::helper('baraniuk_iai/data')->__('Back'),
+                'onclick' => 'back()',
                 'class' => 'back'
-            ) , 1 );
+            ), 1);
 
-            $this->_addButton( 'save' , array(
-                'label' => Mage::helper( 'baraniuk_iai/data' )->__( 'Import' ) ,
-                'onclick' => 'importFile()' ,
+            $this->_addButton('save', array(
+                'label' => Mage::helper('baraniuk_iai/data')->__('Import'),
+                'onclick' => 'importFile()',
                 'class' => 'save'
-            ) , -2 );
+            ), -2);
 
             $this->_formScripts[] = "
              function importFile(){
@@ -35,10 +35,10 @@
              }
              ";
 
-            $this->_headerText = Mage::helper( 'baraniuk_iai/data' )->__( 'Import of images' );
+            $this->_headerText = Mage::helper('baraniuk_iai/data')->__('Import of images');
         }
 
-        public function getHello ()
+        public function getHello()
         {
             return 'hello';
         }
