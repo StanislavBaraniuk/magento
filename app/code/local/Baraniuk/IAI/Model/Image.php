@@ -3,16 +3,16 @@
     class Baraniuk_IAI_Model_Image
     {
 
-        /** @var $helperFileWorker Baraniuk_IAI_Helper_FileWorker **/
+        /** @var $helperFileWorker Baraniuk_IAI_Helper_FileWorker * */
         static private $_helperFileWorker;
 
-        /** @var $helperHttp Baraniuk_IAI_Helper_Http **/
+        /** @var $helperHttp Baraniuk_IAI_Helper_Http * */
         static private $_helperHttp;
 
-        /** @var $helperImages Baraniuk_IAI_Helper_Images **/
+        /** @var $helperImages Baraniuk_IAI_Helper_Images * */
         static private $_helperImages;
 
-        /** @var $helperImages Baraniuk_IAI_Model_Images **/
+        /** @var $helperImages Baraniuk_IAI_Model_Images * */
         static private $_modelImages;
 
         private $_image = null;
@@ -27,26 +27,29 @@
          *
          * @param Baraniuk_IAI_Model_Images $image
          */
-        public function __construct (Baraniuk_IAI_Model_Images $image)
+        public function __construct ( Baraniuk_IAI_Model_Images $image )
         {
 
             $this->_image = $image;
 
-            self::$_helperFileWorker    = Mage::helper('baraniuk_iai/FileWorker');
-            self::$_helperHttp          = Mage::helper('baraniuk_iai/Http');
-            self::$_helperImages        = Mage::helper('baraniuk_iai/Images');
-            self::$_modelImages         = Mage::getModel('baraniuk_iai/Images');
+            self::$_helperFileWorker = Mage::helper( 'baraniuk_iai/FileWorker' );
+            self::$_helperHttp = Mage::helper( 'baraniuk_iai/Http' );
+            self::$_helperImages = Mage::helper( 'baraniuk_iai/Images' );
+            self::$_modelImages = Mage::getModel( 'baraniuk_iai/Images' );
         }
 
-        public function getHelperFileWorker () {
+        public function getHelperFileWorker ()
+        {
             return self::$_helperFileWorker;
         }
 
-        public function getHelperHttp () {
+        public function getHelperHttp ()
+        {
             return self::$_helperHttp;
         }
 
-        public function getHelperImages () {
+        public function getHelperImages ()
+        {
             return self::$_helperImages;
         }
 
@@ -56,15 +59,16 @@
          *
          * @return bool
          */
-        public function attach (array $request = null, $path = null) {
+        public function attach ( array $request = null , $path = null )
+        {
 
             $url = $this->_image->getUrl();
 
             if ($request === null) {
                 $request = self::$_helperHttp->loadImageByUrl( $url );
             } else {
-                if (isset($request[ 'error' ]) && isset($request[ 'response' ])) {
-                    if (!($request[ 'response' ] instanceof Zend_Http_Response)) {
+                if (isset( $request[ 'error' ] ) && isset( $request[ 'response' ] )) {
+                    if (!( $request[ 'response' ] instanceof Zend_Http_Response )) {
                         return false;
                     }
                 }
@@ -75,7 +79,7 @@
 
             if (empty( $this->error )) {
 
-                $this->size = $response->getHeader('Content-length');
+                $this->size = $response->getHeader( 'Content-length' );
 
                 if ($path === null) {
                     $path = $this->generateImagePath( $response , $url );
@@ -85,14 +89,14 @@
 
                 if (self::$_helperFileWorker->createFile( $path , $content )) {
 
-                    $productCollection = Mage::getModel('catalog/product')->getCollection()
-                        ->addFieldToFilter('sku', $this->_image->getSku());
+                    $productCollection = Mage::getModel( 'catalog/product' )->getCollection()
+                        ->addFieldToFilter( 'sku' , $this->_image->getSku() );
 
                     foreach ($productCollection as $product) {
 
-                        $prod = Mage::getModel('catalog/product')->load($product->getId());
+                        $prod = Mage::getModel( 'catalog/product' )->load( $product->getId() );
 
-                        if ($this->attachImageToProduct( $path, $prod )) {
+                        if ($this->attachImageToProduct( $path , $prod )) {
                             $this->status = self::$_modelImages::STATUS_LOADED;
                         } else {
                             $this->error .= "\r\n" . "Couldn't to attach file";
@@ -101,7 +105,7 @@
                     }
                 } else {
                     $this->status = self::$_modelImages::STATUS_ERROR;
-                    $this->error .= "\r\n" . "Couldn't to create of the file" ;
+                    $this->error .= "\r\n" . "Couldn't to create of the file";
                 }
             } else {
                 $this->size = 0;
@@ -110,10 +114,10 @@
 
             if ($response !== null && $response->getStatus() === 404) {
                 $this->status = self::$_modelImages::STATUS_RETRY;
-                $this->error .= "\r\n" . "404 Page not found" ;
+                $this->error .= "\r\n" . "404 Page not found";
             }
 
-            $this->loadDatetime = (new DateTime( 'now', new DateTimeZone('GMT')))->format('Y-m-d H:i');
+            $this->loadDatetime = ( new DateTime( 'now' , new DateTimeZone( 'GMT' ) ) )->format( 'Y-m-d H:i' );
 
             $this->update();
         }
@@ -124,7 +128,8 @@
          *
          * @return bool Does was image attached
          */
-        public function attachImageToProduct (string $path , Mage_Catalog_Model_Product &$product) : bool {
+        public function attachImageToProduct ( string $path , Mage_Catalog_Model_Product &$product ): bool
+        {
 
             try {
 
@@ -148,7 +153,7 @@
                 $product->save();
 
                 if (self::$_helperImages->_isDeleteFileAfter) {
-                    Mage::helper( 'baraniuk_iai/fileWorker' )->deleteFile($path);
+                    Mage::helper( 'baraniuk_iai/fileWorker' )->deleteFile( $path );
                 }
 
                 return true;
@@ -164,15 +169,16 @@
          *
          * @return string
          */
-        public function generateImagePath (Zend_Http_Response $response, string $url) : string {
+        public function generateImagePath ( Zend_Http_Response $response , string $url ): string
+        {
 
-            /** @var $helperFileWorker Baraniuk_IAI_Helper_FileWorker **/
-            $helperFileWorker = Mage::helper('baraniuk_iai/FileWorker');
+            /** @var $helperFileWorker Baraniuk_IAI_Helper_FileWorker * */
+            $helperFileWorker = Mage::helper( 'baraniuk_iai/FileWorker' );
 
-            $contentType = explode('/', $response->getHeader('Content-type'));
+            $contentType = explode( '/' , $response->getHeader( 'Content-type' ) );
 
             $path = $helperFileWorker->generateName(
-                Mage::getBaseDir('media') . DS . 'baraniuk_iai' . DS . basename($url) . '.' . $contentType[1]
+                Mage::getBaseDir( 'media' ) . DS . 'baraniuk_iai' . DS . basename( $url ) . '.' . $contentType[ 1 ]
             );
 
             return $path;
@@ -181,7 +187,8 @@
         /**
          *  Update row in DB
          */
-        public function update () {
+        public function update ()
+        {
             $this->_image
                 ->setLoadAt( $this->loadDatetime )
                 ->setSize( $this->size )
@@ -198,7 +205,7 @@
          */
         public function __call ( $name , $arguments )
         {
-            $type = substr($name, 0, 3);
+            $type = substr( $name , 0 , 3 );
 
             switch ($type) {
                 case 'get':

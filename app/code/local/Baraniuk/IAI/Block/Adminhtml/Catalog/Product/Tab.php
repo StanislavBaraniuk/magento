@@ -5,24 +5,13 @@
     {
 
         /**
-         * Set the template for the block
-         *
-         */
-//        public function _construct()
-//        {
-//            parent::_construct();
-//
-////            $this->setTemplate('baraniuk_iai/popup.phtml');
-//        }
-
-        /**
          * Retrieve the label used for the tab relating to this block
          *
          * @return string
          */
-        public function getTabLabel()
+        public function getTabLabel ()
         {
-            return $this->__('Auto imported images');
+            return $this->__( 'Auto imported images' );
         }
 
         /**
@@ -30,9 +19,9 @@
          *
          * @return string
          */
-        public function getTabTitle()
+        public function getTabTitle ()
         {
-            return $this->__('Import of images');
+            return $this->__( 'Import of images' );
         }
 
         /**
@@ -41,7 +30,7 @@
          *
          * @return bool
          */
-        public function canShowTab()
+        public function canShowTab ()
         {
             return true;
         }
@@ -51,21 +40,24 @@
          *
          * @return bool
          */
-        public function isHidden()
+        public function isHidden ()
         {
             return false;
         }
 
-        public function getClass () {
+        public function getClass ()
+        {
             return 'ajax';
         }
 
-        public function getTabClass () {
+        public function getTabClass ()
+        {
             return 'ajax';
         }
 
-        public function getTabUrl () {
-            return $this->getUrl('*/iai/grid', array('_current'=>true));
+        public function getTabUrl ()
+        {
+            return $this->getUrl( '*/iai/grid' , array( '_current' => true ) );
         }
 
 

@@ -6,9 +6,10 @@
         /**
          * @return array Imported .csv file should to contain returned attributes
          */
-        public function getRequiredAttributes () {
+        public function getRequiredAttributes ()
+        {
 
-            return array('sku', 'url');
+            return array( 'sku' , 'url' );
         }
 
         /**
@@ -21,24 +22,23 @@
          * @return Baraniuk_IAI_Helper_Attributes_AttributesExist
          *          TRUE if attributes is correct, FALSE if attributes is incorrect
          */
-        public function attributesExist (array $userAttributes, $rigidity = false)
-            : Baraniuk_IAI_Helper_Attributes_AttributesExist
+        public function attributesExist ( array $userAttributes , $rigidity = false ): Baraniuk_IAI_Helper_Attributes_AttributesExist
         {
 
             $requiredAttributes = $this->getRequiredAttributes();
 
-            $checkByAttributeKit = $rigidity ? $userAttributes      : $requiredAttributes;
-            $checkOnAttributeKit = $rigidity ? $requiredAttributes  : $userAttributes;
+            $checkByAttributeKit = $rigidity ? $userAttributes : $requiredAttributes;
+            $checkOnAttributeKit = $rigidity ? $requiredAttributes : $userAttributes;
 
             $incorrectAttributes = array();
 
             foreach ($checkByAttributeKit as $attribute) {
-                if (!in_array($attribute, $checkOnAttributeKit)) {
-                    array_push($incorrectAttributes, $attribute);
+                if (!in_array( $attribute , $checkOnAttributeKit )) {
+                    array_push( $incorrectAttributes , $attribute );
                 }
             }
 
-            return new Baraniuk_IAI_Helper_Attributes_AttributesExist($incorrectAttributes);
+            return new Baraniuk_IAI_Helper_Attributes_AttributesExist( $incorrectAttributes );
         }
 
     }

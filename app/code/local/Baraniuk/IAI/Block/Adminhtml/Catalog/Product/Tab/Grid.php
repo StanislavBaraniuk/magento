@@ -14,10 +14,10 @@
 
         protected function _prepareCollection ()
         {
-            $product= Mage::getModel('catalog/product')->load($this->getRequest()->getParam('id'));
+            $product = Mage::getModel( 'catalog/product' )->load( $this->getRequest()->getParam( 'id' ) );
 
             $collection = Mage::getModel( 'baraniuk_iai/images' )->getCollection()
-                ->addFieldToFilter('sku', $product->getSku());
+                ->addFieldToFilter( 'sku' , $product->getSku() );
 
             $this->setCollection( $collection );
             return parent::_prepareCollection();
@@ -28,7 +28,7 @@
 
             try {
 
-                /**@var $iaiModel Baraniuk_IAI_Model_Images int **/
+                /**@var $iaiModel Baraniuk_IAI_Model_Images int * */
                 $iaiModel = Mage::getModel( 'baraniuk_iai/images' );
 
                 $this->addColumn( 'id' , array(
@@ -50,7 +50,7 @@
                     'align' => 'center' ,
                     'type' => 'date' ,
                     'index' => 'load_at' ,
-                    'default' => Mage::helper( 'baraniuk_iai' )->__("Awaits")
+                    'default' => Mage::helper( 'baraniuk_iai' )->__( "Awaits" )
                 ) );
 
                 $this->addColumn( 'url' , array(
@@ -63,8 +63,8 @@
                     'header' => Mage::helper( 'baraniuk_iai' )->__( 'Image size' ) ,
                     'align' => 'left' ,
                     'index' => 'size' ,
-                    'default' => 0,
-                    'renderer'  => 'Baraniuk_IAI_Block_Renderer_Size'
+                    'default' => 0 ,
+                    'renderer' => 'Baraniuk_IAI_Block_Renderer_Size'
                 ) );
 
                 $this->addColumn( 'status' , array(
@@ -75,10 +75,10 @@
                     'index' => 'status' ,
                     'type' => 'options' ,
                     'options' => array(
-                        $iaiModel::STATUS_QUEUE => Mage::helper( 'baraniuk_iai' )->__('Queue') ,
-                        $iaiModel::STATUS_LOADED => Mage::helper( 'baraniuk_iai' )->__('Loaded') ,
-                        $iaiModel::STATUS_ERROR => Mage::helper( 'baraniuk_iai' )->__('Error') ,
-                        $iaiModel::STATUS_RETRY => Mage::helper( 'baraniuk_iai' )->__('Retry')
+                        $iaiModel::STATUS_QUEUE => Mage::helper( 'baraniuk_iai' )->__( 'Queue' ) ,
+                        $iaiModel::STATUS_LOADED => Mage::helper( 'baraniuk_iai' )->__( 'Loaded' ) ,
+                        $iaiModel::STATUS_ERROR => Mage::helper( 'baraniuk_iai' )->__( 'Error' ) ,
+                        $iaiModel::STATUS_RETRY => Mage::helper( 'baraniuk_iai' )->__( 'Retry' )
                     ) ,
                 ) );
 
@@ -90,7 +90,7 @@
                 ) );
 
             } catch (Exception $e) {
-                throw new Exception('Error of the columns preparing');
+                throw new Exception( 'Error of the columns preparing' );
             }
 
             return parent::_prepareColumns();
@@ -101,4 +101,6 @@
             return $this->getUrl( '*/iai/grid' , array( '_current' => true ) );
         }
     }
+
+
 

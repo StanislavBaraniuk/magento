@@ -1,5 +1,5 @@
 <?php
-    /** @var Mage_Core_Model_Resource_Setup $installer*/
+    /** @var Mage_Core_Model_Resource_Setup $installer */
     $installer = $this;
     $installer->startSetup();
 
@@ -21,8 +21,8 @@
                 'nullable' => false
             ) )
             ->addColumn( 'create_at' , Varien_Db_Ddl_Table::TYPE_TIMESTAMP , null , array(
-                'nullable' => false,
-                'default'  => Varien_Db_Ddl_Table::TIMESTAMP_INIT
+                'nullable' => false ,
+                'default' => Varien_Db_Ddl_Table::TIMESTAMP_INIT
             ) )
             ->addColumn( 'load_at' , Varien_Db_Ddl_Table::TYPE_TIMESTAMP , null , array(
                 'nullable' => true
@@ -37,9 +37,9 @@
                 'nullable' => true
             ) );
 
-        $installer->getConnection()->createTable($table);
+        $installer->getConnection()->createTable( $table );
     } catch (Zend_Db_Exception $e) {
-        trigger_error("Baraniuk/IAI module have error in setup of 0.0.1 v");
+        trigger_error( "Baraniuk/IAI module have error in setup of 0.0.1 v" );
     }
 
 
