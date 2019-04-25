@@ -1,7 +1,6 @@
 <?php
 
-    class Baraniuk_IAI_Block_Adminhtml_Catalog_Product_Tab extends Mage_Adminhtml_Block_Template
-        implements Mage_Adminhtml_Block_Widget_Tab_Interface
+    class Baraniuk_IAI_Block_Adminhtml_Catalog_Product_Tab extends Mage_Adminhtml_Block_Template implements Mage_Adminhtml_Block_Widget_Tab_Interface
     {
 
         /**
