@@ -18,37 +18,46 @@
             /** @var Baraniuk_IAI_Helper_Attributes $attributesHelper */
             $attributesHelper = Mage::helper('baraniuk_iai/attributes');
 
-            $csvArray = str_getcsv(file_get_contents($_FILES[ 'fileImport' ][ 'tmp_name' ]));
+//            $mem_start = memory_get_usage();
 
-            $csvAttributes = $parserHelper->getCsvAttributes($csvArray);
+            try {
 
-            $attributesExist = $attributesHelper->attributesExist($csvAttributes);
+                $csvFile = file($_FILES[ 'fileImport' ][ 'tmp_name' ]);
 
-            if (!$attributesExist->_status) {
+                $dataObject = $parserHelper->csvFileToArray($csvFile);
 
-                Mage::getSingleton('core/session')->addError($attributesExist->_message);
-                header("Location: " . $_SERVER[ "HTTP_REFERER" ]);
-            } else {
+                $attributesExist = $attributesHelper->attributesExist($dataObject->attributes, array("sku", "url"), true);
 
-                $formattedArray = $parserHelper->csvToArray($csvArray, $csvAttributes);
+                if (!$attributesExist->_status) {
 
-                foreach ($formattedArray as $item) {
-                    $iaiModel = Mage::getModel("baraniuk_iai/images");
-                    $iaiModel
-                        ->setSku($item[ 'sku' ])
-                        ->setUrl($item[ 'url' ])
-                        ->setStatus(Mage::getModel()->STATUS_QUEUE)
-                        ->setCreateAt(
-                            (new DateTime('now', new DateTimeZone('GMT')))->format('Y-m-d H:i')
-                        )
-                        ->save();
+                    Mage::getSingleton('core/session')->addError($attributesExist->_message);
+                } else {
+
+                    foreach ($dataObject->array as $item) {
+
+                        /** @var Baraniuk_IAI_Model_Images $iaiModel */
+                        $iaiModel = Mage::getModel("baraniuk_iai/images");
+                        $iaiModel
+                            ->setSku($item[ 'sku' ])
+                            ->setUrl($item[ 'url' ])
+                            ->setStatus($iaiModel->STATUS_QUEUE)
+                            ->setCreateAt(
+                                (new DateTime('now', new DateTimeZone('GMT')))->format('Y-m-d H:i')
+                            )
+                            ->save();
+                    }
+
+                    Mage::getSingleton('core/session')->addSuccess($attributesExist->_message);
+
                 }
 
-                Mage::getSingleton('core/session')->addSuccess($attributesExist->_message);
-                header("Location: " . $_SERVER[ "HTTP_REFERER" ]);
+                $this->_redirectUrl($_SERVER[ "HTTP_REFERER" ]);
+
+            } catch (Exception $e) {
+                throw new Exception("Parsing error");
             }
 
-            die();
+//            $end = memory_get_usage() - $mem_start;
         }
 
 

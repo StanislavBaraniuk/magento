@@ -38,9 +38,4 @@
             $this->_headerText = Mage::helper('baraniuk_iai/data')->__('Import of images');
         }
 
-        public function getHello()
-        {
-            return 'hello';
-        }
-
     }

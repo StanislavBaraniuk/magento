@@ -4,15 +4,6 @@
     {
 
         /**
-         * @return array Imported .csv file should to contain returned attributes
-         */
-        public function getRequiredAttributes()
-        {
-
-            return array('sku', 'url');
-        }
-
-        /**
          * @param array $userAttributes Attributes you wants to compare with required attributes
          * @param bool $rigidity
          *          Use TRUE for check by inputted values, FALSE if you will use required attributes as a main checker
@@ -24,10 +15,9 @@
          */
         public function attributesExist(
             array $userAttributes,
+            array $requiredAttributes,
             $rigidity = false
         ): Baraniuk_IAI_Helper_Attributes_AttributesExist {
-
-            $requiredAttributes = $this->getRequiredAttributes();
 
             $checkByAttributeKit = $rigidity ? $userAttributes : $requiredAttributes;
             $checkOnAttributeKit = $rigidity ? $requiredAttributes : $userAttributes;

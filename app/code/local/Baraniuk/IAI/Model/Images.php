@@ -1,5 +1,11 @@
 <?php
 
+    /**
+     * @property int STATUS_QUEUE
+     * @property int STATUS_LOADED
+     * @property int STATUS_ERROR
+     * @property int STATUS_RETRY
+     */
     class Baraniuk_IAI_Model_Images extends Mage_Core_Model_Abstract
     {
 

@@ -32,10 +32,12 @@
 
             $this->_image = $image;
 
-            self::$_helperFileWorker = Mage::helper('baraniuk_iai/FileWorker');
-            self::$_helperHttp = Mage::helper('baraniuk_iai/Http');
-            self::$_helperImages = Mage::helper('baraniuk_iai/Images');
-            self::$_modelImages = Mage::getModel('baraniuk_iai/Images');
+            if (empty(self::$_helperFileWorker)) {
+                self::$_helperFileWorker = Mage::helper('baraniuk_iai/FileWorker');
+                self::$_helperHttp = Mage::helper('baraniuk_iai/Http');
+                self::$_helperImages = Mage::helper('baraniuk_iai/Images');
+                self::$_modelImages = Mage::getModel('baraniuk_iai/Images');
+            }
         }
 
         public function getHelperFileWorker()
@@ -94,6 +96,7 @@
 
                     foreach ($productCollection as $product) {
 
+                        /** @var Mage_Catalog_Model_Product $prod */
                         $prod = Mage::getModel('catalog/product')->load($product->getId());
 
                         if ($this->attachImageToProduct($path, $prod)) {
@@ -120,6 +123,8 @@
             $this->loadDatetime = (new DateTime('now', new DateTimeZone('GMT')))->format('Y-m-d H:i');
 
             $this->update();
+
+            return true;
         }
 
         /**
@@ -153,6 +158,7 @@
                 $product->save();
 
                 if (self::$_helperImages->_isDeleteFileAfter) {
+                    /** @see Baraniuk_IAI_Helper_FileWorker */
                     Mage::helper('baraniuk_iai/fileWorker')->deleteFile($path);
                 }
 

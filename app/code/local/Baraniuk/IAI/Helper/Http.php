@@ -31,47 +31,48 @@
          *
          * @return array (response, error)
          */
-        public function loadImageByUrl(string &$url): array
+        public function loadImageByUrl(string $url): array
         {
-
-            $url = str_replace("\r", '', $url);
-            $url = str_replace("\n", '', $url);
-            $url = str_replace("\t", '', $url);
 
             $error = null;
             $response = null;
 
-            $requestProtocols = array($this->getProtocol());
+            if (filter_var($url, FILTER_VALIDATE_URL)) {
 
-            array_unshift($requestProtocols, explode('://', $url)[ 0 ]);
+                $requestProtocols = array($this->getProtocol());
 
-            foreach ($requestProtocols as $protocol) {
+                array_unshift($requestProtocols, explode('://', $url)[ 0 ]);
 
-                try {
+                foreach ($requestProtocols as $protocol) {
 
-                    $url = explode('://', $url);
-                    $url[ 0 ] = $protocol;
-                    $url = implode('://', $url);
+                    try {
 
-                    $client = new Zend_Http_Client($url);
+                        $url = explode('://', $url);
+                        $url[ 0 ] = $protocol;
+                        $url = implode('://', $url);
 
-                    $response = $client->request('GET');
+                        $client = new Zend_Http_Client($url);
 
-                    $contentType = explode('/', $response->getHeader('Content-type'));
+                        $response = $client->request('GET');
 
-                    if ($contentType[ 0 ] != 'image') {
+                        $contentType = explode('/', $response->getHeader('Content-type'));
 
-                        $error .= $contentType . empty($contentType) ? ' - is ' : 'Is' . ' not image';
-                    } else {
-                        $error = null;
-                        break;
+                        if ($contentType[ 0 ] != 'image') {
+
+                            $error .= $contentType . empty($contentType) ? ' - is ' : 'Is' . ' not image';
+                        } else {
+                            $error = null;
+                            break;
+                        }
+
+
+                    } catch (Zend_Http_Client_Exception $e) {
+
+                        $error .= $e;
                     }
-
-
-                } catch (Zend_Http_Client_Exception $e) {
-
-                    $error .= $e;
                 }
+            } else {
+                $error = "Url is incorrect";
             }
 
             return array('response' => $response, 'error' => $error);

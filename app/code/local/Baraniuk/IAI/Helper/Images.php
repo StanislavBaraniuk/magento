@@ -10,17 +10,15 @@
         /**
          * @return Baraniuk_IAI_Model_Image
          */
-        public function loadImages(): Generator
+        public function loadImages()
         {
-
+            /** @var Baraniuk_IAI_Helper_Images $imagesModel **/
             $imagesModel = Mage::getModel('baraniuk_iai/images');
 
             $images = $imagesModel->getCollection()
                 ->addFieldToFilter($imagesModel::COLUMN_LOAD_STATUS, array("lt" => $imagesModel::STATUS_LOADED));
 
-            foreach ($images as $image) {
-                yield new Baraniuk_IAI_Model_Image($image);
-            }
+            return $images;
         }
 
         public function getFileSize($bytes)
@@ -37,10 +35,7 @@
 
         public function isToday($date)
         {
-
-            date_default_timezone_set((new DateTimeZone("GMT")));
-
-            $today = new DateTime(); // This object represents current date/time
+            $today = new DateTime("now", new DateTimeZone("GMT")); // This object represents current date/time
             $today->setTime(0, 0, 0); // reset time part, to prevent partial comparison
 
             $match_date = new DateTime($date);

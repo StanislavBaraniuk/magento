@@ -3,79 +3,46 @@
     class Baraniuk_IAI_Helper_Parser extends Mage_Core_Helper_Abstract
     {
 
-        public function getCsvAttributes(array $csvArray): array
-        {
-            $keys = array();
-            foreach ($csvArray as $key => $item) {
-
-                $explodeBy = '';
-
-                if (strpos($item, "\t")) {
-                    $explodeBy .= "\t";
-                }
-
-                if (strpos($item, "\r")) {
-                    $explodeBy .= "\r";
-                }
-
-                if (strpos($item, "\n")) {
-                    $explodeBy .= "\n";
-                }
-
-                if (empty($explodeBy)) {
-                    array_push($keys, $item);
-                } else {
-                    $explodedRow = explode($explodeBy, $item)[ 0 ];
-                    array_push($keys, explode($explodeBy, $item)[ 0 ]);
-                    break;
-                }
-            }
-
-            return $keys;
-        }
-
-
         /**
-         * @param array $csvArray CSV data without formatting
-         * @param array|null $keys
+         * @param $csvFile array Opened csv file
          *
-         * @return array
+         * @return object Contain array of the data $array and array of the attributes
          */
-        public function csvToArray(array $csvArray, array $attributes = null): array
+        public function csvFileToArray(array $csvFile)
         {
-            $attributes = $attributes === null ? $this->getCsvAttributes($csvArray) : $attributes;
 
-            $attributesCount = count($attributes);
+            $formattedArray = [];
 
-            array_splice($csvArray, 0, $attributesCount - 1);
-            $formattedArray = array();
+            foreach ($csvFile as $line) {
+                $data[] = str_getcsv($line);
+            }
 
-            for ($i = 0 ;$i < $attributesCount ;$i++) {
+            $attributes = $data[ 0 ];
+            unset($data[ 0 ]);
 
-                if (count($csvArray) == 0) {
-                    break;
-                }
+            foreach ($data as $key => $datum) {
+                foreach ($attributes as $keyA => $attribute) {
 
-                if ($i == 0) {
-                    $temporaryRow = array();
-                    $csvArray[ 0 ] = explode("\n", $csvArray[ 0 ])[ 1 ];
-                }
-
-                if ($i < $attributesCount - 2) {
-                    $temporaryRow[ $attributes[ $i ] ] = $csvArray[ $i ];
-                } else {
-                    $temporaryRow[ $attributes[ $i ] ] = explode("\n", $csvArray[ $i ])[ 0 ];
-                }
-
-                if ($i == $attributesCount - 1) {
-                    $i = -1;
-                    $formattedArray[] = $temporaryRow;
-                    array_splice($csvArray, 0, $attributesCount - 1);
+                    $formattedArray[ $key ][ $attribute ] = $datum[ $keyA ];
                 }
             }
 
-            array_pop($formattedArray);
+            return
+                /**
+                 * @property array $array
+                 * @property array $attributes
+                 */
+                new class ($formattedArray, $attributes)
+                {
 
-            return $formattedArray;
+                    public $array;
+                    public $attributes;
+
+                    public function __construct(&$formattedArray, &$attributes)
+                    {
+                        $this->attributes = $attributes;
+                        $this->array = $formattedArray;
+                    }
+                };
         }
     }

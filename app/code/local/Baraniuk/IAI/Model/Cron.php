@@ -10,9 +10,7 @@
             /** @var $modelImages Baraniuk_IAI_Model_Images * */
             $modelImages = Mage::getModel('baraniuk_iai/images');
 
-            $images = $helperImages->loadImages();
-
-            foreach ($images as $image) {
+            foreach ($helperImages->loadImages() as $image) {
                 if ($image->getStatus() == $modelImages::STATUS_RETRY) {
 
                     if (!$helperImages->isToday($image->getLoadAt())) {
