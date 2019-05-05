@@ -20,42 +20,36 @@
 
 //            $mem_start = memory_get_usage();
 
-            try {
+            $csvFile = file($_FILES[ 'fileImport' ][ 'tmp_name' ]);
 
-                $csvFile = file($_FILES[ 'fileImport' ][ 'tmp_name' ]);
+            $dataObject = $parserHelper->csvFileToArray($csvFile);
 
-                $dataObject = $parserHelper->csvFileToArray($csvFile);
+            $attributesExist = $attributesHelper->attributesExist($dataObject->attributes, array("sku", "url"), true);
 
-                $attributesExist = $attributesHelper->attributesExist($dataObject->attributes, array("sku", "url"), true);
+            if (!$attributesExist->_status) {
 
-                if (!$attributesExist->_status) {
+                Mage::getSingleton('core/session')->addError($attributesExist->_message);
+            } else {
 
-                    Mage::getSingleton('core/session')->addError($attributesExist->_message);
-                } else {
+                foreach ($dataObject->array as $item) {
 
-                    foreach ($dataObject->array as $item) {
-
-                        /** @var Baraniuk_IAI_Model_Images $iaiModel */
-                        $iaiModel = Mage::getModel("baraniuk_iai/images");
-                        $iaiModel
-                            ->setSku($item[ 'sku' ])
-                            ->setUrl($item[ 'url' ])
-                            ->setStatus($iaiModel->STATUS_QUEUE)
-                            ->setCreateAt(
-                                (new DateTime('now', new DateTimeZone('GMT')))->format('Y-m-d H:i')
-                            )
-                            ->save();
-                    }
-
-                    Mage::getSingleton('core/session')->addSuccess($attributesExist->_message);
-
+                    /** @var Baraniuk_IAI_Model_Image $iaiModel */
+                    $iaiModel = Mage::getModel("baraniuk_iai/image");
+                    $iaiModel
+                        ->setSku($item[ 'sku' ])
+                        ->setUrl($item[ 'url' ])
+                        ->setStatus($iaiModel->STATUS_QUEUE)
+                        ->setCreateAt(
+                            (new DateTime('now', new DateTimeZone('GMT')))->format('Y-m-d H:i')
+                        )
+                        ->save();
                 }
 
-                $this->_redirectUrl($_SERVER[ "HTTP_REFERER" ]);
+                Mage::getSingleton('core/session')->addSuccess($attributesExist->_message);
 
-            } catch (Exception $e) {
-                throw new Exception("Parsing error");
             }
+
+            $this->_redirectUrl($_SERVER[ "HTTP_REFERER" ]);
 
 //            $end = memory_get_usage() - $mem_start;
         }

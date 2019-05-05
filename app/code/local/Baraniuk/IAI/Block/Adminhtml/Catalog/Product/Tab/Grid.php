@@ -18,8 +18,8 @@
                 array($this->getRequest()->getParam('id'))
             )[0]["sku"];
 
-            /** @var Baraniuk_IAI_Model_Images **/
-            $collection = Mage::getModel('baraniuk_iai/images')->getCollection()
+            /** @var Baraniuk_IAI_Model_Image **/
+            $collection = Mage::getModel('baraniuk_iai/image')->getCollection()
                 ->addFieldToFilter('sku', $sku);
 
             $this->setCollection($collection);
@@ -29,8 +29,8 @@
         protected function _prepareColumns()
         {
 
-            /**@var $iaiModel Baraniuk_IAI_Model_Images int * */
-            $iaiModel = Mage::getModel('baraniuk_iai/images');
+            /**@var $iaiModel Baraniuk_IAI_Model_Image int * */
+            $iaiModel = Mage::getModel('baraniuk_iai/image');
 
             $this->addColumn('id', array(
                 'header' => Mage::helper('baraniuk_iai')->__('ID'),

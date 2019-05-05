@@ -13,13 +13,13 @@
             $this->_removeButton('save');
 
             $this->_addButton('back', array(
-                'label' => Mage::helper('baraniuk_iai/data')->__('Back'),
+                'label' => Mage::helper('baraniuk_iai')->__('Back'),
                 'onclick' => 'back()',
                 'class' => 'back'
             ), 1);
 
             $this->_addButton('save', array(
-                'label' => Mage::helper('baraniuk_iai/data')->__('Import'),
+                'label' => Mage::helper('baraniuk_iai')->__('Import'),
                 'onclick' => 'importFile()',
                 'class' => 'save'
             ), -2);
@@ -35,7 +35,7 @@
              }
              ";
 
-            $this->_headerText = Mage::helper('baraniuk_iai/data')->__('Import of images');
+            $this->_headerText = Mage::helper('baraniuk_iai')->__('Import of images');
         }
 
     }

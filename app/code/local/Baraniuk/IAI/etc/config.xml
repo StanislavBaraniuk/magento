@@ -54,9 +54,9 @@
             <iai_resource>
                 <class>Baraniuk_IAI_Model_Resource</class>
                 <entities>
-                    <images>
+                    <image>
                         <table>baraniuk_iai_images</table>
-                    </images>
+                    </image>
                 </entities>
             </iai_resource>
         </models>

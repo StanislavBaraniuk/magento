@@ -3,20 +3,6 @@
     class Baraniuk_IAI_Helper_Http
     {
 
-
-        /**
-         * @return bool
-         */
-        public function isHttps(): bool
-        {
-
-            if ($_SERVER[ 'REQUEST_SCHEME' ] === 'https') {
-                return true;
-            } else {
-                return false;
-            }
-        }
-
         /**
          * @return string
          */

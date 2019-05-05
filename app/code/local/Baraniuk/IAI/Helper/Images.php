@@ -7,20 +7,6 @@
          */
         public $_isDeleteFileAfter = true;
 
-        /**
-         * @return Baraniuk_IAI_Model_Image
-         */
-        public function loadImages()
-        {
-            /** @var Baraniuk_IAI_Helper_Images $imagesModel **/
-            $imagesModel = Mage::getModel('baraniuk_iai/images');
-
-            $images = $imagesModel->getCollection()
-                ->addFieldToFilter($imagesModel::COLUMN_LOAD_STATUS, array("lt" => $imagesModel::STATUS_LOADED));
-
-            return $images;
-        }
-
         public function getFileSize($bytes)
         {
             $i = -1;

@@ -10,14 +10,14 @@
          *          $rigidity = FALSE: $requiredAttributes = "sku", $userAttributes = "sku", "url" : return True
          *          $rigidity = TRUE: $requiredAttributes = "sku", $userAttributes = "sku", "url" : return False
          *
-         * @return Baraniuk_IAI_Helper_Attributes_AttributesExist
+         * @return Baraniuk_IAI_Model_Image_Attributes_AttributesExist
          *          TRUE if attributes is correct, FALSE if attributes is incorrect
          */
         public function attributesExist(
             array $userAttributes,
             array $requiredAttributes,
             $rigidity = false
-        ): Baraniuk_IAI_Helper_Attributes_AttributesExist {
+        ): Baraniuk_IAI_Model_Image_Attributes_AttributesExist {
 
             $checkByAttributeKit = $rigidity ? $userAttributes : $requiredAttributes;
             $checkOnAttributeKit = $rigidity ? $requiredAttributes : $userAttributes;
@@ -30,7 +30,7 @@
                 }
             }
 
-            return new Baraniuk_IAI_Helper_Attributes_AttributesExist($incorrectAttributes);
+            return new Baraniuk_IAI_Model_Image_Attributes_AttributesExist($incorrectAttributes);
         }
 
     }

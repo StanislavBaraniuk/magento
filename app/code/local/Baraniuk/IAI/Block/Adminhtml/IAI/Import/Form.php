@@ -17,15 +17,15 @@
             $fieldset = $form->addFieldset(
                 'main_tab',
                 array(
-                    'legend' => Mage::helper("baraniuk_iai/data")->__('Waiting for file'),
+                    'legend' => Mage::helper("baraniuk_iai")->__('Waiting for file'),
                     'class' => 'fieldset-wide'
                 ));
 
 
             $fieldset->addField('file', 'file', array(
                 'name' => 'fileImport" accept=".csv',
-                'label' => Mage::helper("baraniuk_iai/data")->__("Import"),
-                'title' => Mage::helper("baraniuk_iai/data")->__("Import"),
+                'label' => Mage::helper("baraniuk_iai")->__("Import"),
+                'title' => Mage::helper("baraniuk_iai")->__("Import"),
                 'required' => true,
             ));
 
