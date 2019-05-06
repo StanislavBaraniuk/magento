@@ -18,12 +18,12 @@
             /** @var Baraniuk_IAI_Helper_Attributes $attributesHelper */
             $attributesHelper = Mage::helper('baraniuk_iai/attributes');
 
-//            $mem_start = memory_get_usage();
-
             $csvFile = file($_FILES[ 'fileImport' ][ 'tmp_name' ]);
 
+            /** @var $dataObject Baraniuk_IAI_Model_Image_Import_CsvArayKeeper * */
             $dataObject = $parserHelper->csvFileToArray($csvFile);
 
+            /** @var $attributesExist Baraniuk_IAI_Model_Image_Attributes_AttributesExist */
             $attributesExist = $attributesHelper->attributesExist($dataObject->attributes, array("sku", "url"), true);
 
             if (!$attributesExist->_status) {
@@ -50,8 +50,6 @@
             }
 
             $this->_redirectUrl($_SERVER[ "HTTP_REFERER" ]);
-
-//            $end = memory_get_usage() - $mem_start;
         }
 
 

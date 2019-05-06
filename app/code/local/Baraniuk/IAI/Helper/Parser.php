@@ -6,9 +6,9 @@
         /**
          * @param $csvFile array Opened csv file
          *
-         * @return object Contain array of the data $array and array of the attributes
+         * @return Baraniuk_IAI_Model_Image_Import_CsvArrayKeeper
          */
-        public function csvFileToArray(array $csvFile)
+        public function csvFileToArray(array $csvFile): Baraniuk_IAI_Model_Image_Import_CsvArrayKeeper
         {
 
             $formattedArray = [];
@@ -27,22 +27,6 @@
                 }
             }
 
-            return
-                /**
-                 * @property array $array
-                 * @property array $attributes
-                 */
-                new class ($formattedArray, $attributes)
-                {
-
-                    public $array;
-                    public $attributes;
-
-                    public function __construct(&$formattedArray, &$attributes)
-                    {
-                        $this->attributes = $attributes;
-                        $this->array = $formattedArray;
-                    }
-                };
+            return new Baraniuk_IAI_Model_Image_Import_CsvArrayKeeper($formattedArray, $attributes);
         }
     }

@@ -15,7 +15,7 @@
         /** @var $_modelImage Baraniuk_IAI_Model_Image * */
         static private $_modelImage;
 
-        /** @var $_image Baraniuk_IAI_Model_Image **/
+        /** @var $_image Baraniuk_IAI_Model_Image * */
         private $_image = null;
 
         public $loadDatetime;
@@ -179,7 +179,7 @@
         public function generateImagePath(Zend_Http_Response $response, string $url): string
         {
 
-            /** @var $helperFileWorker Baraniuk_IAI_Helper_FileWorker **/
+            /** @var $helperFileWorker Baraniuk_IAI_Helper_FileWorker * */
             $helperFileWorker = Mage::helper('baraniuk_iai/FileWorker');
 
             $contentType = explode('/', $response->getHeader('Content-type'));

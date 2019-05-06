@@ -52,7 +52,7 @@
                 $imageEntities[] = new Baraniuk_IAI_Model_Image_Import_Downloader($image);
             }
 
-            return  $imageEntities;
+            return $imageEntities;
         }
 
     }
