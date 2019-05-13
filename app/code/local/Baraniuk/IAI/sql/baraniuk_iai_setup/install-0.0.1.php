@@ -3,7 +3,7 @@
     $installer = $this;
     $installer->startSetup();
 
-    $table_name = $this->getTable('baraniuk_iai/images');
+    $table_name = $this->getTable('baraniuk_iai/image');
 
     try {
         $table = $installer->getConnection()
@@ -15,10 +15,12 @@
                 'primary' => true
             ))
             ->addColumn('url', Varien_Db_Ddl_Table::TYPE_TEXT, null, array(
-                'nullable' => false
+                'nullable' => false,
+                'unique'  => true
             ))
             ->addColumn('sku', Varien_Db_Ddl_Table::TYPE_TEXT, null, array(
-                'nullable' => false
+                'nullable' => false,
+                'unique'  => true
             ))
             ->addColumn('create_at', Varien_Db_Ddl_Table::TYPE_TIMESTAMP, null, array(
                 'nullable' => false,
