@@ -13,7 +13,7 @@
          * Default column names
          */
         const COLUMN_ID = 'id';
-        const COLUMN_IMAGE_URL = 'ur';
+        const COLUMN_IMAGE_URL = 'url';
         const COLUMN_PRODUCT_SKU = 'sku';
         const COLUMN_CREATE_DATETIME = 'create_at';
         const COLUMN_LOAD_DATETIME = 'load_at';
@@ -41,7 +41,7 @@
         }
 
         /**
-         * @return array Baraniuk_IAI_Model_Image_Import_Downloader
+         * @return array Baraniuk_IAI_Model_Image_Import_Handler
          */
         public function loadImages(): array
         {
@@ -49,7 +49,7 @@
                 ->addFieldToFilter($this::COLUMN_LOAD_STATUS, array("lt" => $this::STATUS_LOADED));
 
             foreach ($images as $image) {
-                $imageEntities[] = new Baraniuk_IAI_Model_Image_Import_Downloader($image);
+                $imageEntities[] = new Baraniuk_IAI_Model_Image_Import_Handler($image);
             }
 
             return $imageEntities;

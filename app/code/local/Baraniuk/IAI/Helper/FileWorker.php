@@ -1,6 +1,6 @@
 <?php
 
-    class Baraniuk_IAI_Helper_FileWorker
+    class Baraniuk_IAI_Helper_FileWorker extends Mage_Core_Helper_Abstract
     {
 
         /**
@@ -8,7 +8,7 @@
          *
          * @return array (name, type)
          */
-        public function getNameType($path)
+        public function getNameType($path): array
         {
 
             $expoldePath = explode('.', $path);
@@ -74,15 +74,15 @@
          * @param string $path
          * @param string $content
          *
-         * @return bool|string
+         * @return null|string
          */
-        public function createFile(string $path, string $content)
+        public function createFile(string $path, string $content): ?string
         {
 
             if (file_put_contents($path, $content)) {
                 return $path;
             } else {
-                return false;
+                return null;
             }
         }
 

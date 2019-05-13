@@ -15,10 +15,10 @@
         protected function _prepareCollection()
         {
             $sku = Mage::getResourceModel("catalog/product")->getProductsSku(
-                array($this->getRequest()->getParam('id'))
-            )[0]["sku"];
+                        array($this->getRequest()->getParam('id'))
+                    )[ 0 ][ "sku" ];
 
-            /** @var Baraniuk_IAI_Model_Image **/
+            /** @var \Baraniuk_IAI_Model_Resource_Image_Collection * */
             $collection = Mage::getModel('baraniuk_iai/image')->getCollection()
                 ->addFieldToFilter('sku', $sku);
 

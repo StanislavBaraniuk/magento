@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Baraniuk_IAI>
-            <version>0.0.1</version>
+            <version>1.0.0</version>
         </Baraniuk_IAI>
     </modules>
 
@@ -72,6 +72,7 @@
                 <class>Baraniuk_IAI_Helper</class>
             </baraniuk_iai>
         </helpers>
+
     </global>
     <crontab>
         <jobs>

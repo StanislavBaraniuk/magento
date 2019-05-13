@@ -10,10 +10,8 @@
             /** @var $modelImages Baraniuk_IAI_Model_Image * */
             $modelImages = Mage::getModel('baraniuk_iai/image');
 
-//            $mem_start = memory_get_usage();
-
             /** @var $images array Baraniuk_IAI_Model_Image $images */
-            $images =  $modelImages->loadImages();
+            $images = $modelImages->loadImages();
 
             /** @var $image Baraniuk_IAI_Model_Image_Import_Downloader */
             foreach ($images as $image) {
@@ -27,8 +25,6 @@
                     $image->attach();
                 }
             }
-
-//            $end = memory_get_usage() - $mem_start;
 
             return $this;
         }

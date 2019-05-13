@@ -1,6 +1,6 @@
 <?php
 
-    class Baraniuk_IAI_Model_Image_Import_Downloader
+    class Baraniuk_IAI_Model_Image_Import_Handler
     {
 
         /** @var $_helperFileWorker Baraniuk_IAI_Helper_FileWorker * */
@@ -39,21 +39,6 @@
                 self::$_helperImages = Mage::helper('baraniuk_iai/Images');
                 self::$_modelImage = Mage::getModel('baraniuk_iai/Image');
             }
-        }
-
-        public function getHelperFileWorker()
-        {
-            return self::$_helperFileWorker;
-        }
-
-        public function getHelperHttp()
-        {
-            return self::$_helperHttp;
-        }
-
-        public function getHelperImages()
-        {
-            return self::$_helperImages;
         }
 
         /**
@@ -193,15 +178,23 @@
 
         /**
          *  Update row in DB
+         *
+         *  @return bool
          */
-        public function update()
+        public function update() : bool
         {
-            $this->_image
+            if (
+                $this->_image
                 ->setLoadAt($this->loadDatetime)
                 ->setSize($this->size)
                 ->setStatus($this->status)
                 ->setErrorText($this->error)
-                ->save();
+                ->save()
+            ) {
+                return true;
+            }
+
+            return false;
         }
 
         /**

@@ -1,6 +1,6 @@
 <?php
 
-    class Baraniuk_IAI_Helper_Http
+    class Baraniuk_IAI_Helper_Http extends Mage_Core_Helper_Abstract
     {
 
         /**
@@ -8,7 +8,6 @@
          */
         public function getProtocol(): string
         {
-
             return $_SERVER[ 'REQUEST_SCHEME' ];
         }
 
@@ -47,6 +46,7 @@
 
                             $error .= $contentType . empty($contentType) ? ' - is ' : 'Is' . ' not image';
                         } else {
+
                             $error = null;
                             break;
                         }

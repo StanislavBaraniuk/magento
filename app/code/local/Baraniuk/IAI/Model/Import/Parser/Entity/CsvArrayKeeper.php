@@ -1,6 +1,6 @@
 <?php
 
-    class Baraniuk_IAI_Model_Image_Import_CsvArrayKeeper
+    class Baraniuk_IAI_Model_Import_Parser_Entity_CsvArrayKeeper
     {
         public $array;
         public $attributes;
