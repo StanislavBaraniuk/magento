@@ -72,7 +72,7 @@
         /**
          * Get attributes from parsed csv data and delete it from
          *
-         * @param $array
+         * @param array $array
          *
          * @return array
          */
@@ -83,16 +83,19 @@
         }
 
         /**
-         * Delete
-         *
-         * @param $array
+         * @param array $array
          */
-        private function deleteAttributesFromParsedCSVData(& $array)
+        private function deleteAttributesFromParsedCSVData(array & $array)
         {
             unset($array[ 0 ]);
         }
 
-        private function parse($csvFile): ?array
+        /**
+         * @param array $csvFile
+         *
+         * @return array|null
+         */
+        private function parse(array $csvFile): ?array
         {
             foreach ($csvFile as $line) {
                 $data[] = str_getcsv($line);
