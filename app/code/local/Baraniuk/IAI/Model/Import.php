@@ -155,7 +155,7 @@
             }
         }
 
-        private function _checkSimilarRows(&$row): bool {
+        private function _checkSimilarRows($row): bool {
 
             $similarRows = $this->_model->getCollection()
                 ->addFieldToFilter("sku", array("eq" => $row[ 'sku' ]));
@@ -165,7 +165,6 @@
             foreach ($similarRows->getData() as $datum) {
                 if (array_search($row[ 'url' ], $datum)) {
                     $isExist = true;
-                    unset($row);
                     break;
                 }
             }

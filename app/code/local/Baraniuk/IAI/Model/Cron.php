@@ -10,10 +10,10 @@
             /** @var $modelImages Baraniuk_IAI_Model_Image * */
             $modelImages = Mage::getModel('baraniuk_iai/image');
 
-            /** @var $images array Baraniuk_IAI_Model_Image $images */
-            $images = $modelImages->loadImages();
+            /** @var $images array Baraniuk_IAI_Model_Image_Handler $images */
+            $images = $modelImages->getImagesForDownloading();
 
-            /** @var $image Baraniuk_IAI_Model_Image_Import_Downloader */
+            /** @var $image Baraniuk_IAI_Model_Image_Handler */
             foreach ($images as $image) {
                 if ($image->getStatus() == $modelImages::STATUS_RETRY) {
 

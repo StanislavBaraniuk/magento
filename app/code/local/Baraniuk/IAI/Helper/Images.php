@@ -12,7 +12,7 @@
          *
          * @return string
          */
-        public function getFileSize($bytes): string
+        public function getFileSize(int $bytes): string
         {
             $i = -1;
             $byteUnits = [' kB', ' MB', ' GB', ' TB', 'PB', 'EB', 'ZB', 'YB'];
@@ -29,7 +29,7 @@
          *
          * @return bool
          */
-        public function isToday($date): bool
+        public function isToday(string $date): bool
         {
             $today = new DateTime("now", new DateTimeZone("GMT")); // This object represents current date/time
             $today->setTime(0, 0, 0); // reset time part, to prevent partial comparison

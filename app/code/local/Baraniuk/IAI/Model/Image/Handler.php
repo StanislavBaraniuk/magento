@@ -1,6 +1,6 @@
 <?php
 
-    class Baraniuk_IAI_Model_Image_Import_Handler
+    class Baraniuk_IAI_Model_Image_Handler
     {
 
         /** @var $_helperFileWorker Baraniuk_IAI_Helper_FileWorker * */
@@ -170,7 +170,7 @@
             $contentType = explode('/', $response->getHeader('Content-type'));
 
             $path = $helperFileWorker->generateName(
-                Mage::getBaseDir('media') . DS . 'baraniuk_iai' . DS . basename($url) . '.' . $contentType[ 1 ]
+                (string) Mage::getBaseDir('media') . DS . 'baraniuk_iai' . DS . basename($url) . '.' . $contentType[ 1 ]
             );
 
             return $path;

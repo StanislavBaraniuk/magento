@@ -41,15 +41,17 @@
         }
 
         /**
-         * @return array Baraniuk_IAI_Model_Image_Import_Handler
+         * @return array Baraniuk_IAI_Model_Image_Handler
          */
-        public function loadImages(): array
+        public function getImagesForDownloading(): array
         {
             $images = $this->getCollection()
                 ->addFieldToFilter($this::COLUMN_LOAD_STATUS, array("lt" => $this::STATUS_LOADED));
 
+            $imageEntities = array();
+
             foreach ($images as $image) {
-                $imageEntities[] = new Baraniuk_IAI_Model_Image_Import_Handler($image);
+                $imageEntities[] = new Baraniuk_IAI_Model_Image_Handler($image);
             }
 
             return $imageEntities;

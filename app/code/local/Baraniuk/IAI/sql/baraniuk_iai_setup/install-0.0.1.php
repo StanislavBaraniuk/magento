@@ -38,6 +38,27 @@
             ->addColumn('error_text', Varien_Db_Ddl_Table::TYPE_TEXT, null, array(
                 'nullable' => true
             ));
+//            ->addIndex($installer->getIdxName('baraniuk_iai/image', array('sku')),
+//                array('sku'))
+//            ->addForeignKey(
+//                $installer->getFkName(
+//                    'baraniuk_iai/image',
+//                    'sku',
+//                    'catalog/product',
+//                    'sku'
+//                ),
+//                'sku', $installer->getTable('catalog/product'), 'sku',
+//                Varien_Db_Ddl_Table::ACTION_CASCADE, Varien_Db_Ddl_Table::ACTION_CASCADE
+//            );
+//        >addForeignKey(
+//            $installer->getFkName(
+//                'catalog/product',
+//                'attribute_set_id',
+//                'eav/attribute_set',
+//                'attribute_set_id'
+//            ),
+//            'attribute_set_id', $installer->getTable('eav/attribute_set'), 'attribute_set_id',
+//            Varien_Db_Ddl_Table::ACTION_CASCADE, Varien_Db_Ddl_Table::ACTION_CASCADE);
 
         $installer->getConnection()->createTable($table);
     } catch (Zend_Db_Exception $e) {

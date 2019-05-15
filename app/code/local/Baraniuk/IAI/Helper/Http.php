@@ -6,9 +6,17 @@
         /**
          * @return string
          */
-        public function getProtocol(): string
+        public function getProtocol(): ?string
         {
-            return $_SERVER[ 'REQUEST_SCHEME' ];
+            $protocol = $_SERVER[ 'REQUEST_SCHEME' ];
+
+            if ($protocol === null) {
+                $isUsingServerVariablesHTTPS= isset($_SERVER[ 'HTTPS' ]);
+                if ($isUsingServerVariablesHTTPS) {
+                    $protocol = $_SERVER[ 'HTTPS' ] == "on" ? "https" : "http";
+                }
+            }
+            return $protocol;
         }
 
         /**
@@ -30,31 +38,16 @@
 
                 foreach ($requestProtocols as $protocol) {
 
-                    try {
+                    if (empty($protocol)) {
+                        continue;
+                    }
 
-                        $url = explode('://', $url);
-                        $url[ 0 ] = $protocol;
-                        $url = implode('://', $url);
+                    $this->_replaceURLConnectionType($url, $protocol);
 
-                        $client = new Zend_Http_Client($url);
+                    $response = $this->_sendRequestForImageLoading($url, $error);
 
-                        $response = $client->request('GET');
-
-                        $contentType = explode('/', $response->getHeader('Content-type'));
-
-                        if ($contentType[ 0 ] != 'image') {
-
-                            $error .= $contentType . empty($contentType) ? ' - is ' : 'Is' . ' not image';
-                        } else {
-
-                            $error = null;
-                            break;
-                        }
-
-
-                    } catch (Zend_Http_Client_Exception $e) {
-
-                        $error .= $e;
+                    if ($response) {
+                        break;
                     }
                 }
             } else {
@@ -62,6 +55,38 @@
             }
 
             return array('response' => $response, 'error' => $error);
+        }
+
+        private function _replaceURLConnectionType(&$url, $protocol) {
+            $url = explode('://', $url);
+            $url[ 0 ] = $protocol;
+            $url = implode('://', $url);
+        }
+
+        private function _sendRequestForImageLoading($url, &$errorKeeper): ?Zend_Http_Response {
+
+            $client = new Zend_Http_Client($url);
+
+            try {
+
+                $response = $client->request('GET');
+
+                $contentType = explode('/', $response->getHeader('Content-type'));
+
+                if ($contentType[ 0 ] != 'image') {
+
+                    $errorKeeper .= $contentType . empty($contentType) ? ' - is ' : 'Is' . ' not image';
+                    return null;
+                } else {
+
+                    $errorKeeper = null;
+                    return $response;
+                }
+            } catch (Zend_Http_Client_Exception $e) {
+
+                $errorKeeper .= $e;
+                return null;
+            }
         }
 
     }

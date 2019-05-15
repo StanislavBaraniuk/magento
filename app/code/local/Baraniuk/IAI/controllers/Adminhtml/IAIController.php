@@ -11,7 +11,6 @@
 
         public function importAction()
         {
-            $d = 1;
             /** @var Baraniuk_IAI_Model_Import $importer */
             $importer = Mage::getModel('baraniuk_iai/import');
 
@@ -30,7 +29,6 @@
             $this->_redirectReferer();
         }
 
-
         public function gridAction()
         {
             $this->loadLayout();
@@ -39,24 +37,37 @@
             );
         }
 
-        private function _addError(...$error): Baraniuk_IAI_Adminhtml_IAIController
+        /**
+         * Send error message to session
+         *
+         * @param mixed ...$error
+         *
+         * @return Baraniuk_IAI_Adminhtml_IAIController
+         */
+        private function _addError(...$error): self
         {
             $this->_getCoreSessionSingleton()->addError(...$error);
             return $this;
         }
 
-        private function _addNotice(...$notice): Baraniuk_IAI_Adminhtml_IAIController
-        {
-            $this->_getCoreSessionSingleton()->addNotice(...$notice);
-            return $this;
-        }
-
-        private function _addSuccess(...$success): Baraniuk_IAI_Adminhtml_IAIController
+        /**
+         * Send success message to session
+         *
+         * @param mixed ...$success
+         *
+         * @return Baraniuk_IAI_Adminhtml_IAIController
+         */
+        private function _addSuccess(...$success): self
         {
             $this->_getCoreSessionSingleton()->addSuccess(...$success);
             return $this;
         }
 
+        /**
+         * Get object of session
+         *
+         * @return Mage_Core_Model_Session
+         */
         private function _getCoreSessionSingleton(): Mage_Core_Model_Session
         {
             /** @var $coreSessionSingleton Mage_Core_Model_Session * */

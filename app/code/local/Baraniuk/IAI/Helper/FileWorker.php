@@ -4,11 +4,13 @@
     {
 
         /**
+         * Receives file name, return array with separated name and extension of the file
+         *
          * @param $path
          *
          * @return array (name, type)
          */
-        public function getNameType($path): array
+        public function getNameType(string $path): array
         {
 
             $expoldePath = explode('.', $path);
@@ -23,11 +25,13 @@
         }
 
         /**
+         * Generate name of the downloaded file in the media folder of the extension
+         *
          * @param $path
          *
          * @return string
          */
-        public function generateName($path): string
+        public function generateName(string $path): string
         {
 
             $i = 1;
