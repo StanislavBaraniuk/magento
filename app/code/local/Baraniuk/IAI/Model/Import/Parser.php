@@ -76,7 +76,7 @@
          *
          * @return array
          */
-        private function getAttributesFromParsedCSVData($array): array
+        private function getAttributesFromParsedCSVData(array $array): array
         {
 
             return $array[ 0 ];
