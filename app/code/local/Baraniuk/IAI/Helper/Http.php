@@ -11,7 +11,7 @@
             $protocol = $_SERVER[ 'REQUEST_SCHEME' ];
 
             if ($protocol === null) {
-                $isUsingServerVariablesHTTPS= isset($_SERVER[ 'HTTPS' ]);
+                $isUsingServerVariablesHTTPS = isset($_SERVER[ 'HTTPS' ]);
                 if ($isUsingServerVariablesHTTPS) {
                     $protocol = $_SERVER[ 'HTTPS' ] == "on" ? "https" : "http";
                 }
@@ -57,13 +57,15 @@
             return array('response' => $response, 'error' => $error);
         }
 
-        private function _replaceURLConnectionType(&$url, $protocol) {
+        private function _replaceURLConnectionType(&$url, $protocol)
+        {
             $url = explode('://', $url);
             $url[ 0 ] = $protocol;
             $url = implode('://', $url);
         }
 
-        private function _sendRequestForImageLoading($url, &$errorKeeper): ?Zend_Http_Response {
+        private function _sendRequestForImageLoading($url, &$errorKeeper): ?Zend_Http_Response
+        {
 
             $client = new Zend_Http_Client($url);
 

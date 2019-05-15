@@ -7,7 +7,7 @@
         {
             $size = $row->getSize();
 
-            return '<p>' . Mage::helper('baraniuk_iai/images')->getFileSize((int) $size) . '</p>';
+            return '<p>' . Mage::helper('baraniuk_iai/images')->getFileSize((int)$size) . '</p>';
         }
 
     }

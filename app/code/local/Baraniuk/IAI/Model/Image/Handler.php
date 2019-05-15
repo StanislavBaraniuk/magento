@@ -170,7 +170,7 @@
             $contentType = explode('/', $response->getHeader('Content-type'));
 
             $path = $helperFileWorker->generateName(
-                (string) Mage::getBaseDir('media') . DS . 'baraniuk_iai' . DS . basename($url) . '.' . $contentType[ 1 ]
+                (string)Mage::getBaseDir('media') . DS . 'baraniuk_iai' . DS . basename($url) . '.' . $contentType[ 1 ]
             );
 
             return $path;
@@ -179,12 +179,12 @@
         /**
          *  Update row in DB
          *
-         *  @return bool
+         * @return bool
          */
-        public function update() : bool
+        public function update(): bool
         {
             if (
-                $this->_image
+            $this->_image
                 ->setLoadAt($this->loadDatetime)
                 ->setSize($this->size)
                 ->setStatus($this->status)
