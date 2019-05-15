@@ -38,8 +38,10 @@
 
                     if ($validation) {
                         $formattedArray[ $key ][ $attribute ] = $datum[ $keyA ];
-                    } else if ($validation !== null) {
-                        $this->errors[] = "Value of `$attribute` is incorrect in row: " . ($key);
+                    } else {
+                        if ($validation !== null) {
+                            $this->errors[] = "Value of `$attribute` is incorrect in row: " . ($key);
+                        }
                     }
                 }
             }

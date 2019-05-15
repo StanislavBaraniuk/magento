@@ -1,6 +1,7 @@
 <?php
 
-    class Baraniuk_IAI_Model_Import {
+    class Baraniuk_IAI_Model_Import
+    {
 
         const VALIDATION_SIMILAR_ROWS = true;
 
@@ -35,13 +36,14 @@
         public function __construct()
         {
             $this->_parser = Mage::getModel("baraniuk_iai/import_parser");
-            $this->_model =  Mage::getModel("baraniuk_iai/image");
+            $this->_model = Mage::getModel("baraniuk_iai/image");
         }
 
         /**
          * @return bool|null
          */
-        public function import (): ?bool {
+        public function import(): ?bool
+        {
 
             if ($this->_openFile()) {
 
@@ -59,7 +61,8 @@
         /**
          * @return bool
          */
-        private function checkRequiredAttributesExisting (): bool {
+        private function checkRequiredAttributesExisting(): bool
+        {
 
             $isExist = true;
 
@@ -73,12 +76,13 @@
             return $isExist;
         }
 
-        private function _checkDidRowContainAllRequiredAttributes ($row): bool {
+        private function _checkDidRowContainAllRequiredAttributes($row): bool
+        {
 
             $isExist = true;
 
             foreach ($this->_requiredAttributes as $requiredAttribute) {
-                if (!isset($row[$requiredAttribute])) {
+                if (!isset($row[ $requiredAttribute ])) {
                     $isExist = false;
                 }
             }
@@ -89,12 +93,13 @@
         /**
          * @return bool
          */
-        private function _openFile (): bool {
+        private function _openFile(): bool
+        {
 
             $file = file($_FILES[ 'fileImport' ][ 'tmp_name' ]);
 
             if ($file) {
-                if ($_FILES[ 'fileImport' ]['type'] == "text/csv") {
+                if ($_FILES[ 'fileImport' ][ 'type' ] == "text/csv") {
 
                     $this->_file = $file;
 
@@ -112,7 +117,8 @@
         /**
          * @return array
          */
-        public function getErrors(): array {
+        public function getErrors(): array
+        {
             return $this->_parser->errors;
         }
 
@@ -121,16 +127,18 @@
          *
          * @return Baraniuk_IAI_Model_Import
          */
-        private function _addError($error): self {
+        private function _addError($error): self
+        {
             array_push($this->_parser->errors, $error);
             return $this;
         }
 
-        private function _save() {
+        private function _save()
+        {
             foreach ($this->_data->array as $key => $item) {
 
                 if (!$this->_checkDidRowContainAllRequiredAttributes($item)) {
-                    unset($this->_data->array[$key]);
+                    unset($this->_data->array[ $key ]);
                     continue;
                 }
 
@@ -149,13 +157,14 @@
                         )
                         ->save();
                 } else {
-                    unset($this->_data->array[$key]);
+                    unset($this->_data->array[ $key ]);
                     $this->_addError("Row " . $key . " already exist");
                 }
             }
         }
 
-        private function _checkSimilarRows($row): bool {
+        private function _checkSimilarRows($row): bool
+        {
 
             $similarRows = $this->_model->getCollection()
                 ->addFieldToFilter("sku", array("eq" => $row[ 'sku' ]));
@@ -172,7 +181,8 @@
             return $isExist;
         }
 
-        public function getParsedArray(): array {
+        public function getParsedArray(): array
+        {
             return $this->_data->array;
         }
     }

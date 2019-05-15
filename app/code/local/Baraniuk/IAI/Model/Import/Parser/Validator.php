@@ -19,7 +19,7 @@
 
                 if ($validationFunction !== null) {
                     if (method_exists($this, $validationFunction)) {
-                        return (bool) $this->{$validationFunction}($item);
+                        return (bool)$this->{$validationFunction}($item);
                     } else {
                         return null;
                     }
@@ -29,15 +29,17 @@
             return null;
         }
 
-        public function validateSku ($sku): bool {
+        public function validateSku($sku): bool
+        {
 
             $product = Mage::getModel('catalog/product')->getCollection()
-                ->addFieldToFilter("sku", array("eq"=>$sku));
+                ->addFieldToFilter("sku", array("eq" => $sku));
 
             return !empty($product->getData());
         }
 
-        public function validateUrl($url): bool {
+        public function validateUrl($url): bool
+        {
             return filter_var($url, FILTER_VALIDATE_URL);
         }
 
