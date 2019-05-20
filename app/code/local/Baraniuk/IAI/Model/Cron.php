@@ -15,14 +15,18 @@
 
             /** @var $image Baraniuk_IAI_Model_Image_Handler */
             foreach ($images as $image) {
-                if ($image->getStatus() == $modelImages::STATUS_RETRY) {
+                try {
+                    if ($image->getStatus() == $modelImages::STATUS_RETRY) {
 
-                    if (!$helperImages->isToday($image->getLoadAt())) {
+                        if (!$helperImages->isToday($image->getLoadAt())) {
+                            $image->attach();
+                        }
+
+                    } else {
                         $image->attach();
                     }
-
-                } else {
-                    $image->attach();
+                } catch (Exception $exception) {
+                    Mage::logException($exception);
                 }
             }
 
